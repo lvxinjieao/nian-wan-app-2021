@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <android.widget.LinearLayout
+        android:id="@+id/ll_game_detail_activities_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.widget.RelativeLayout
+            android:id="@+id/rl_activities_title"
+            android:layout_width="match_parent"
+            android:layout_height="140px">
+
+            <ImageView
+                android:id="@+id/bn"
+                android:layout_width="52px"
+                android:layout_height="52px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="10px"
+                android:background="@drawable/game_details_activity" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/bn"
+                android:text="新闻资讯"
+                android:textColor="@color/zi_hei"
+                android:textSize="16sp" />
+
+            <android.widget.LinearLayout
+                android:id="@+id/gass_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10px"
+                    android:text="更多"
+                    android:textColor="@color/zi_hui2"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="25px"
+                    android:layout_height="45px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/home_btn_all"
+                    android:visibility="gone" />
+            </android.widget.LinearLayout>
+        </android.widget.RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_home_game_activities_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:numColumns="4"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="@color/xian" />
+    </android.widget.LinearLayout>
+
+
+    <android.widget.LinearLayout
+        android:id="@+id/ll_game_detail_gonglue_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.widget.RelativeLayout
+            android:id="@+id/rl_gonglue_title"
+            android:layout_width="match_parent"
+            android:layout_height="140px">
+
+            <ImageView
+                android:id="@+id/img_gonglue"
+                android:layout_width="52px"
+                android:layout_height="52px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="10px"
+                android:background="@drawable/game_details_activity" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_gonglue"
+                android:text="攻略"
+                android:textColor="@color/zi_hei"
+                android:textSize="16sp" />
+
+            <android.widget.LinearLayout
+                android:id="@+id/gonglue_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10px"
+                    android:text="更多"
+                    android:textColor="@color/zi_hui2"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="25px"
+                    android:layout_height="45px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/home_btn_all"
+                    android:visibility="gone" />
+            </android.widget.LinearLayout>
+        </android.widget.RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_home_game_gonglue_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:numColumns="4"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:background="@color/xian" />
+    </android.widget.LinearLayout>
+
+
+    <android.widget.LinearLayout
+        android:id="@+id/ll_game_detail_all_people"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.widget.RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140px">
+
+            <ImageView
+                android:id="@+id/bl"
+                android:layout_width="52px"
+                android:layout_height="52px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="10px"
+                android:background="@drawable/my_game" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/bl"
+                android:text="大家都在玩"
+                android:textColor="@color/zi_hei"
+                android:textSize="16sp" />
+
+            <android.widget.LinearLayout
+                android:id="@+id/allplay_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10px"
+                    android:text="更多"
+                    android:textColor="@color/zi_hui2"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="25px"
+                    android:layout_height="45px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@mipmap/home_btn_all" />
+            </android.widget.LinearLayout>
+        </android.widget.RelativeLayout>
+
+        <GridView
+            android:id="@+id/all_play"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60px"
+            android:divider="@null"
+            android:numColumns="4"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+    </android.widget.LinearLayout>
+
+
+</android.widget.LinearLayout>

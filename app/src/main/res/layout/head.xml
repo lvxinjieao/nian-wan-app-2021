@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/hong"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@mipmap/yiniu1"
+         />
+
+    <RelativeLayout
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@color/bai">
+
+        <EditText
+            android:id="@+id/head_search_edit"
+            android:layout_width="145dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:hint="请输入游戏名称"
+            android:inputType=""
+            android:singleLine="true"
+            android:textColor="@color/zi"
+            android:textColorHint="@color/search_zi"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@mipmap/sericon"
+             />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280px"
+        android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40px"
+          android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/btn_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="去玩"
+        android:textSize="15sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bian_kuang_green"
+        android:textColor="@color/zhuse_lan"
+        android:paddingLeft="35px"
+        android:paddingRight="35px"
+        android:paddingBottom="15px"
+        android:paddingTop="15px"
+        android:layout_marginRight="40px"/>
+
+    <TextView
+        android:id="@+id/tv_game_name"
+        android:text="加载中..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_icon"
+        android:layout_toLeftOf="@id/btn_play"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="@color/e7_line" />
+
+    </RelativeLayout>
+</RelativeLayout>

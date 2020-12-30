@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/my_collection_head"
+        layout="@layout/my_collection_head" />
+
+    <RelativeLayout
+        android:id="@+id/rl_my_collection_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_collection_head">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tb_my_collection"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:tabBackground="@color/transparent_note"
+            app:tabIndicatorColor="@color/zhuse_lan"
+            app:tabIndicatorHeight="2dp"
+            app:tabSelectedTextColor="@color/zhuse_lan" />
+
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_below="@+id/tb_my_collection"
+            android:layout_alignLeft="@+id/tb_my_collection"
+            android:layout_alignRight="@+id/tb_my_collection"
+            android:background="#E5E5E5" />
+
+        <View
+            android:id="@+id/balance_space_view"
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:layout_below="@+id/vLine"
+            android:background="#E5E5E5" />
+    </RelativeLayout>
+
+    <com.nian.wan.app.view.CollectionViewPager
+        android:id="@+id/vp_my_collection_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_my_collection_delete"
+        android:layout_below="@+id/rl_my_collection_tab"
+        android:layout_alignParentStart="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_my_collection_delete"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/zhi_jiao_green"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/btn_check_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_my_collection_check_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:button="@drawable/check_box_style"
+                android:checked="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/cb_my_collection_check_all"
+                android:text="全选"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="删除"
+            android:textColor="@color/green"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

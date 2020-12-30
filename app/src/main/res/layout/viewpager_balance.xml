@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/balance_header"
+        layout="@layout/other_head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/balance_header">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tb_balance_title"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:tabBackground="@color/transparent_note"
+            app:tabIndicatorColor="@color/green"
+            app:tabIndicatorHeight="2dp"
+            app:tabSelectedTextColor="@color/green">
+
+        </android.support.design.widget.TabLayout>
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_alignLeft="@+id/tb_balance_title"
+            android:layout_alignRight="@+id/tb_balance_title"
+            android:layout_below="@+id/tb_balance_title"
+            android:background="#E5E5E5"></View>
+
+        <View
+            android:id="@+id/balance_space_view"
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:layout_below="@+id/vLine"
+            android:background="#E5E5E5"></View>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_balance_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/balance_space_view">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

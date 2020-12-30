@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nian.wan.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+
+    <application
+        android:name="com.nian.wan.app.activity.BaseApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <activity
+            android:name="com.nian.wan.app.activity.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.nian.wan.app.activity.MainActivity"
+            android:screenOrientation="behind" />
+
+        <activity
+            android:name="com.nian.wan.app.activity.SearchActivity"
+            android:screenOrientation="behind" />
+
+        <service android:name="com.nian.wan.app.service.SplashDownLoadService" />
+
+        <activity
+            android:name="com.nian.wan.app.activity.ScreenActivity"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+
+
+        <activity
+            android:name=".activity.GameDetailActivity"
+            android:screenOrientation="behind" />
+
+        <activity
+            android:name="com.nian.wan.app.activity.RegisterActivity"
+            android:screenOrientation="behind" />
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="keyboardHidden|navigation|orientation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <data android:scheme="tencent101497865" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.nian.wan.app.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.nian.wan.app.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent" />
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.nian.wan.app.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- <activity android:name=".activity.GiftListActivity"/> -->
+        <activity
+            android:name=".activity.WebActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity android:name=".activity.Type_Activity" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.RetrievePasswordActivity" />
+        <activity android:name=".activity.BangDingActivity" />
+        <activity android:name=".activity.AboutUsActivity" />
+        <activity android:name=".activity.SignWebActivity" />
+        <activity android:name=".activity.MyGiftActivity" />
+        <activity
+            android:name=".activity.FeedbackActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".activity.ModifyPasswordActivity" />
+        <activity android:name=".activity.BangdingPhoneActivity" />
+        <activity android:name=".activity.ReplacePhoneActivity" />
+        <activity android:name=".activity.VerificationPhoneActivity" />
+        <activity android:name=".activity.GiftDetTweActivity" />
+        <activity android:name=".activity.XinWenDetActivity" />
+        <activity
+            android:name=".activity.ShareActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+        <!-- 个人中心start -->
+        <!-- 余额 -->
+        <activity android:name=".activity.BalanceActivity" />
+        <!-- 实名认证 -->
+        <activity android:name=".activity.RealNameActivity" />
+        <!-- 已经实名认证 -->
+        <activity android:name=".activity.AlreadyRealNameActivity" />
+        <!-- 绑定手机号 -->
+        <activity android:name=".activity.BindPhoneActivity" />
+        <!-- 已绑定手机号 -->
+        <activity android:name=".activity.AlreadyBindPhoneActivity" />
+        <!-- 验证原有手机 -->
+        <activity android:name=".activity.CheckOriginalPhoneActivity" />
+        <!-- 修改密码 -->
+        <activity android:name=".activity.ChangePasswordActivity" />
+        <!-- 收货地址 -->
+        <activity android:name=".activity.AddressActivity" />
+        <!-- 添加新收货地址 -->
+        <activity android:name=".activity.NewAddressActivity" />
+        <!-- 我的收藏 -->
+        <activity android:name=".activity.MyGameActivity" />
+        <!-- 个人中心end -->
+
+
+        <!-- 首页start -->
+        <!-- 礼包详情 -->
+        <activity android:name=".activity.HomeGiftDetailActivity" />
+        <!-- 积分记录 -->
+        <activity android:name=".activity.HomeStoreScoreRecordActivity" />
+        <activity android:name=".activity.MyOrderActivity" />
+        <!-- 积分任务 -->
+        <activity android:name=".activity.HomeStoreMissionActivity" />
+        <!-- 积分规则 -->
+        <activity android:name=".activity.HomeStoreRegularActivity" />
+        <!-- 商品详情 -->
+        <activity android:name=".activity.HomeStoreGoodsDetailActivity" />
+        <!-- 首页end -->
+
+
+        <!-- 加载游戏 -->
+        <activity android:name=".activity.NormalWebActivity" />
+
+        <!-- 启动页 -->
+        <!--用户消息中心-->
+        <activity android:name=".activity.UserMessageCenterActivity" />
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <!-- 极光推送相关配置 -->
+
+
+        <activity android:name=".activity.ZheKouActivity" />
+        <activity android:name=".activity.ExchangePTBActivity" />
+        <activity android:name=".activity.RackingActivity" />
+        <activity android:name=".activity.PayActivity" />
+        <activity android:name=".activity.InvitingFriendsActivity" />
+        <activity android:name=".activity.MyInvitationActivity" />
+        <activity
+            android:name=".activity.ShareQRCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.widget.RelativeLayout
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.8"
+        android:background="@drawable/unbind_phone_complete_shape">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+              android:src="@drawable/pop_completed" />
+
+        <TextView
+            android:id="@+id/tv_dialog_pay_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:text="已解除绑定"
+            android:textColor="@color/font_white"
+            android:textSize="17dp" />
+
+
+    </android.widget.RelativeLayout>
+
+</android.widget.RelativeLayout>

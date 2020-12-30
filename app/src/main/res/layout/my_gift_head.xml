@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+
+    <android.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginTop="50px"
+        android:orientation="horizontal">
+
+
+        <android.widget.RelativeLayout
+            android:id="@+id/layout_icon"
+            android:layout_width="126px"
+            android:layout_height="126px"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal">
+            <com.nian.wan.app.view.ShapeImageView
+                android:id="@+id/img_gift_pic"
+                android:layout_width="116px"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"
+                android:src="@drawable/default_picture"
+                app:borderRadius="15px"
+                app:radiusType="round" />
+            <ImageView
+                android:id="@+id/img_tag"
+                android:layout_width="80px"
+                android:layout_height="40px"
+                android:background="@mipmap/tag_h5"
+                android:layout_alignParentRight="true"/>
+        </android.widget.RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_game_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="40px"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="标题"
+            android:textColor="#333333" />
+    </android.widget.LinearLayout>
+
+</android.widget.LinearLayout>

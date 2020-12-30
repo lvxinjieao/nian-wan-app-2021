@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/yuan_jiao_login_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/img_close_login"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tb_login_register"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/img_close_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:tabTextAppearance="@style/tablayouttextstyle"
+        app:tabBackground="@color/transparent_note"
+        app:tabIndicatorColor="@color/white"
+        app:tabIndicatorHeight="1dp"
+        app:tabSelectedTextColor="@color/green" />
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/tb_login_register"
+        android:layout_alignLeft="@+id/tb_login_register"
+        android:layout_alignRight="@+id/tb_login_register"
+        android:background="#E5E5E5" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_login_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vLine" />
+</RelativeLayout>

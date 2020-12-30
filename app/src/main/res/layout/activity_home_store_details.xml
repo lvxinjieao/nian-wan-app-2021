@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="45dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/tou"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/left_white" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_home_gift_detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="商品详情"
+                    android:textColor="@color/font_white"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45px"
+                    android:layout_marginTop="60px"
+                    android:layout_marginBottom="94px">
+
+
+                    <com.nian.wan.app.view.ShapeImageView
+                        android:id="@+id/img_home_gift_detail_game_pic"
+                        android:layout_width="390px"
+                        android:layout_height="390px"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/default_picture"
+                        app:borderRadius="20px"
+                        app:radiusType="round" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/img_home_gift_detail_game_pic"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_home_store_detail_game_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="加载中..."
+                            android:textColor="@color/zi_hei"
+                            android:textSize="50px" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="45px">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="兑换积分："
+                                android:textColor="@color/font_gray"
+                                android:textSize="45px" />
+
+                            <TextView
+                                android:id="@+id/tv_home_store_detail_need_cost"
+                                android:layout_width="wrap_content"
+                                android:layout_height="17dp"
+                                android:text="0"
+                                android:textColor="@color/green"
+                                android:textSize="45px" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="27px">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="商品库存："
+                                android:textColor="@color/font_gray"
+                                android:textSize="45px" />
+
+                            <TextView
+                                android:id="@+id/tv_home_store_detail_inventory"
+                                android:layout_width="wrap_content"
+                                android:layout_height="17dp"
+                                android:text="0"
+                                android:textColor="@color/font_black_1"
+                                android:textSize="45px" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="27px">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="可用积分："
+                                android:textColor="@color/font_gray"
+                                android:textSize="45px" />
+
+                            <TextView
+                                android:id="@+id/tv_home_store_detail_valid_score"
+                                android:layout_width="wrap_content"
+                                android:layout_height="17dp"
+                                android:text="0"
+                                android:textColor="@color/font_black_1"
+                                android:textSize="45px" />
+
+                            <TextView
+                                android:id="@+id/tv_home_store_detail_score_not_enough"
+                                android:layout_width="wrap_content"
+                                android:layout_height="17dp"
+                                android:layout_marginLeft="10px"
+                                android:text="(积分不足)"
+                                android:textColor="@color/font_red"
+                                android:textSize="45px"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10px">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="兑换数量："
+                                android:textColor="@color/font_gray"
+                                android:textSize="45px" />
+
+                            <RelativeLayout
+                                android:id="@+id/rl_home_store_goods_decrease"
+                                android:layout_width="100px"
+                                android:layout_height="100px"
+                                android:background="@color/font_f1f1f1"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/img_home_store_goods_decrease"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/mall_commodity_reduce_not" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="100px"
+                                android:layout_height="100px"
+                                android:layout_marginLeft="4px"
+                                android:background="@color/font_f5f5f5"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/edt_home_store_get_goods_number"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@null"
+                                    android:gravity="center"
+                                    android:inputType="number"
+                                    android:text="1"
+                                    android:textColorHint="@color/font_000000" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_home_store_goods_add"
+                                android:layout_width="100px"
+                                android:layout_height="100px"
+                                android:layout_marginLeft="4px"
+                                android:background="@color/font_f1f1f1"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/img_home_store_goods_increase"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/mall_commodity_add" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@color/xian_shen" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45px"
+                        android:layout_marginTop="60px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="12px"
+                            android:layout_height="60px"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/green" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20px"
+                            android:text="商品详情"
+                            android:textColor="@color/font_black_1"
+                            android:textSize="60px" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_home_gift_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45px"
+                        android:layout_marginTop="40px"
+                        android:layout_marginRight="45px"
+                        android:layout_marginBottom="60px"
+                        android:inputType="textMultiLine"
+                        android:lineSpacingExtra="34px"
+                        android:text="加载中..."
+                        android:textSize="45px" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@color/xian_shen" />
+
+                <LinearLayout
+                    android:id="@+id/ll_cost_step"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45px"
+                        android:layout_marginTop="60px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="12px"
+                            android:layout_height="60px"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/green" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20px"
+                            android:text="兑换流程"
+                            android:textColor="@color/zi_hei"
+                            android:textSize="60px" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45px"
+                            android:layout_marginTop="40px"
+                            android:layout_marginRight="45px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20px"
+                                android:text="Step1:"
+                                android:textSize="45px" />
+
+                            <TextView
+                                android:id="@+id/tv_home_gift_detail_step1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="登录账户"
+                                android:textSize="45px" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="（没有注册的账户点击注册）"
+                                android:textSize="45px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45px"
+                            android:layout_marginTop="30px"
+                            android:layout_marginRight="45px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20px"
+                                android:text="Step2:"
+                                android:textSize="45px" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="点击进入"
+                                android:textSize="45px" />
+
+                            <TextView
+                                android:id="@+id/tv_home_gift_detail_step2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="商城页"
+                                android:textSize="45px" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="浏览可兑换商品"
+                                android:textSize="45px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45px"
+                            android:layout_marginTop="30px"
+                            android:layout_marginRight="45px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20px"
+                                android:text="Step1:"
+                                android:textSize="45px" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="点击想兑换的商品进去"
+                                android:textSize="45px" />
+
+                            <TextView
+                                android:id="@+id/tv_home_gift_detail_step3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="商品详情页"
+                                android:textSize="45px" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="45px"
+                            android:layout_marginTop="30px"
+                            android:layout_marginRight="45px"
+                            android:layout_marginBottom="40px"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20px"
+                                android:text="Step1:"
+                                android:textSize="45px" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="点击底部悬浮按钮"
+                                android:textSize="45px" />
+
+                            <TextView
+                                android:id="@+id/tv_home_gift_detail_step4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="【立即兑换】"
+                                android:textSize="45px" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="进行兑换"
+                                android:textSize="45px" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:background="@color/xian_shen" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45px"
+                        android:layout_marginTop="60px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="12px"
+                            android:layout_height="60px"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/green" />
+
+                        <TextView
+                            android:id="@+id/tv_duihuan_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20px"
+                            android:text="兑换说明"
+                            android:textColor="@color/zi_hei"
+                            android:textSize="60px" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_shiyong"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45px"
+                        android:layout_marginTop="40px"
+                        android:layout_marginRight="45px"
+                        android:layout_marginBottom="40px"
+                        android:lineSpacingMultiplier="1.3"
+                        android:text="虚拟物品使用说明"
+                        android:textSize="45px"
+                        android:visibility="gone" />
+
+                    <RelativeLayout
+                        android:id="@+id/ll_duihuan_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45px"
+                        android:layout_marginTop="40px"
+                        android:layout_marginBottom="40px"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_home_gift_detail_get_function"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="商品将在兑换成功后20个工作日内寄出，"
+                            android:textSize="45px" />
+
+                        <TextView
+                            android:id="@+id/tv_home_gift_detail_get_function_click"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_home_gift_detail_get_function"
+                            android:text="点此"
+                            android:textColor="@color/green"
+                            android:textSize="45px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_home_gift_detail_get_function_click"
+                            android:text="填写或修改"
+                            android:textSize="45px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_home_gift_detail_get_function_click"
+                            android:layout_alignParentLeft="true"
+                            android:layout_toRightOf="@+id/tv_home_gift_detail_get_function_click"
+                            android:text="收货地址"
+                            android:textSize="45px" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@color/xian_shen" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45px"
+                        android:layout_marginTop="60px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="12px"
+                            android:layout_height="60px"
+                            android:layout_gravity="center_vertical"
+                            android:background="@color/green" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20px"
+                            android:text="免责说明"
+                            android:textColor="@color/zi_hei"
+                            android:textSize="60px" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_home_gift_detail_duty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45px"
+                        android:layout_marginTop="40px"
+                        android:layout_marginRight="45px"
+                        android:text="请在兑换前仔细参照商品简介及兑换说明"
+                        android:textSize="45px" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45px"
+                        android:layout_marginTop="20px"
+                        android:layout_marginRight="45px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20px"
+                            android:gravity="center"
+                            android:text="*"
+                            android:textColor="@color/font_red"
+                            android:textSize="45px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="除了商品异常导致不能正常兑换外，一经兑换，一律"
+                            android:textSize="45px" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45px"
+                        android:layout_marginTop="15px"
+                        android:layout_marginRight="45px"
+                        android:text="不予退还积分"
+                        android:textSize="45px" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45px"
+                        android:layout_marginTop="20px"
+                        android:layout_marginRight="45px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20px"
+                            android:gravity="center"
+                            android:text="*"
+                            android:textColor="@color/font_red"
+                            android:textSize="45px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="活动规则最终解释权归"
+                            android:textSize="45px" />
+
+                        <TextView
+                            android:id="@+id/tv_xigu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="溪谷软件"
+                            android:textSize="45px" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="所有，如有疑问可联"
+                            android:textSize="45px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45px"
+                        android:layout_marginTop="15px"
+                        android:layout_marginRight="45px"
+                        android:layout_marginBottom="60px"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="系在线客服"
+                            android:textSize="45px" />
+
+                        <TextView
+                            android:id="@+id/tv_kefu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10px"
+                            android:text="123456789"
+                            android:textColor="@color/zhuse_lan"
+                            android:textSize="45px" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_home_gift_detail_start_game"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/zhi_jiao_gray"
+        android:gravity="center"
+        android:text="立即兑换"
+        android:textColor="@color/icon_gray"
+        android:textSize="16dp" />
+</RelativeLayout>

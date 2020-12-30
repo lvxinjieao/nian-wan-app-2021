@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_shen"
+    android:orientation="vertical">
+
+    <include layout="@layout/other_head" />
+
+    <com.mc.developmentkit.views.SpringView
+        android:id="@+id/springView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tou"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_user_message_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.mc.developmentkit.views.SpringView>
+
+    <LinearLayout
+        android:id="@+id/ll_user_message_no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="290px"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:src="@drawable/my_news" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:text="暂无消息通知"
+            android:textColor="@color/font_gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

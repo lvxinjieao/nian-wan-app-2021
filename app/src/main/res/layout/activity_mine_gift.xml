@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/my_gift_none_head"
+        layout="@layout/other_head" />
+
+    <com.mc.developmentkit.views.SpringView
+        android:id="@+id/sv_springview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/my_gift_none_head">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_my_gift_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+        </android.support.v7.widget.RecyclerView>
+    </com.mc.developmentkit.views.SpringView>
+
+    <android.widget.RelativeLayout
+        android:id="@+id/rl_my_gift_none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/my_gift_none_hot_gift_list"
+        android:layout_below="@+id/my_gift_none_head"
+        android:visibility="gone">
+
+        <android.widget.LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                  android:src="@drawable/blank_gift" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="暂无礼包"
+                android:textColor="@color/font_gray"
+                android:textSize="14sp" />
+        </android.widget.LinearLayout>
+
+    </android.widget.RelativeLayout>
+
+
+    <android.widget.LinearLayout
+        android:id="@+id/my_gift_none_hot_gift_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/mine_gift_hot_gift_list"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:text="推荐礼包"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_my_gift_more"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.1"
+                  android:src="@drawable/right_gray" />
+        </android.widget.LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:background="@color/line" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_my_gift_hot_packge"
+            android:layout_width="match_parent"
+            android:layout_height="800px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.widget.LinearLayout>
+
+</android.widget.RelativeLayout>

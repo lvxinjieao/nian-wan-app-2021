@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/receiving_address_head"
+        layout="@layout/other_head" />
+
+    <LinearLayout
+        android:id="@+id/ll_address_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/receiving_address_head"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px">
+
+            <TextView
+                android:id="@+id/tv_address_username"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="名字"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_address_user_mobile"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="end|center_vertical"
+                android:text="电话"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="20px"
+            android:layout_marginRight="40px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_address_user_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="28px"
+                android:text="地址加载中..."
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="35px"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:layout_marginTop="40px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_address_delete"
+                    android:layout_width="250px"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="删除"
+                    android:textColor="@color/font_black_1"
+                    android:textSize="44px" />
+
+                <TextView
+                    android:id="@+id/tv_address_edit"
+                    android:layout_width="250px"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@id/tv_address_delete"
+                    android:gravity="center"
+                    android:text="编辑"
+                    android:textColor="@color/font_black_1"
+                    android:textSize="44px" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_address_none"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="290px"
+            android:layout_height="280px"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/my_address_img_not" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80px"
+            android:text="尚未添加收货地址"
+            android:textColor="@color/font_gray"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_address_add_new"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/zhuse_lan"
+        android:gravity="center"
+        android:text="添加收货地址"
+        android:textColor="@color/font_white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

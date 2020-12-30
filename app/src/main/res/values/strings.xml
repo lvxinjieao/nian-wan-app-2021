@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name" translatable="false">念玩游戏</string>
+    <string name="id_card_filter_vcode" translatable="false">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="hello" translatable="false">Hello World, JPush!</string>
+    <string name="tag_hint" translatable="false">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint" translatable="false">Alias为大小写字母，数字，下划线</string>
+    <string name="mobilenumber_hint" translatable="false">手机号只能以“+”或数字开头第二位开始只能包含“-”和数字</string>
+    <string name="style_hint" translatable="false">style为数字</string>
+    <string name="error_style_empty" translatable="false">style不能为空</string>
+    <string name="error_alias_empty" translatable="false">alias不能为空</string>
+    <string name="error_tag_empty" translatable="false">tag不能为空</string>
+    <string name="error_tag_gs_empty" translatable="false">格式不对</string>
+    <string name="mobilenumber_empty_guide" translatable="false">手机号为空将清除之前设置的手机号</string>
+    <string name="error_network" translatable="false">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining" translatable="false">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su" translatable="false">设置成功</string>
+
+    <string name="save_picture" translatable="false">保存图片</string>
+    <string name="save_picture_failed" translatable="false">保存失败</string>
+    <string name="save_picture_success" translatable="false">图片成功保存至%s目录</string>
+</resources>

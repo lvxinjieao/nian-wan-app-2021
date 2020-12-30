@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai">
+
+    <include layout="@layout/other_head"/>
+    <LinearLayout
+        android:id="@+id/weitijiao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/edit_bg"
+            android:hint="请输入您的主题"
+            android:textColor="@color/zi_hei"
+            android:textSize="16dp"
+            android:textColorHint="@color/zi_hui2"
+            android:inputType="" android:paddingLeft="15dp"
+            android:id="@+id/zhuti" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edit_bg">
+
+            <TextView
+                android:id="@+id/shengyu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="15dp"
+                android:textColor="@color/zi_hui3"
+                android:text="还可以输入300字"
+                />
+            <EditText
+                android:layout_above="@id/shengyu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="请输入您的意见或问题"
+                android:gravity="top|left"
+                android:inputType="" android:maxLength="300"
+                android:textColor="@color/zi_hei"
+                android:textSize="16dp"
+                android:textColorHint="@color/zi_hui2"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:id="@+id/con" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="留下您的联系方式，一经采纳有意外惊喜哦！"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/zi_hui1"
+            android:textSize="14dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/edit_bg"
+            android:hint="手机号/邮箱/QQ号"
+            android:textColor="@color/zi_hei"
+            android:textSize="16dp"
+            android:textColorHint="@color/zi_hui2"
+            android:inputType="" android:paddingLeft="15dp"
+            android:id="@+id/lianxi" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/zhi_jiao_gray"
+            android:gravity="center"
+            android:text="提交"
+            android:textSize="16dp"
+            android:textColor="@color/icon_gray"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/tijiao" />
+    </LinearLayout>
+    <include layout="@layout/layout_tijiao_ok"/>
+
+</LinearLayout>

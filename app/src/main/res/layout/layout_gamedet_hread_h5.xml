@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai">
+
+
+    <android.widget.RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <com.nian.wan.app.view.MyImageView
+            android:id="@+id/icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_picture"/>
+
+        <android.widget.RelativeLayout
+            android:id="@+id/collection"
+            android:layout_width="200px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40px">
+            <ImageView
+                android:id="@+id/xingxing"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:layout_marginBottom="10px"
+                android:layout_centerHorizontal="true"
+                  android:src="@drawable/collection_unselect" />
+
+            <TextView
+                android:id="@+id/tv_shoucang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/xingxing"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="-1dp"
+                android:gravity="center"
+                android:text="收藏"
+                android:textColor="@color/zhuse_lan"
+                android:textSize="14sp" />
+        </android.widget.RelativeLayout>
+
+        <android.widget.LinearLayout
+            android:id="@+id/p"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20px"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_toLeftOf="@id/collection"
+            android:gravity="center_vertical">
+
+            <android.widget.LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nameww"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="加载中..."
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/zi_hei"/>
+                <TextView
+                    android:id="@+id/leixing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textSize="13sp"
+                    android:text="(加载中)"
+                    android:textColor="@color/zi_hui2" />
+
+            </android.widget.LinearLayout>
+            <android.widget.LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5px">
+
+                <TextView
+                    android:id="@+id/zaiwan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/zhuse_lan"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人在玩"
+                    android:textColor="@color/zi_hei"
+                    android:textSize="13sp" />
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="40px"
+                    android:layout_marginRight="20px"
+                    android:layout_marginLeft="20px"
+                    android:background="@color/zi_hui1"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/shoucang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/zhuse_lan"
+                    android:textSize="13sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人收藏"
+                    android:textColor="@color/zi_hei"
+                    android:textSize="13sp" />
+            </android.widget.LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5px"
+                android:textSize="14sp"
+                android:textColor="@color/zi_hui2"
+                android:text="加载中..."
+                android:singleLine="true"
+                android:id="@+id/yijuhua" />
+        </android.widget.LinearLayout>
+    </android.widget.RelativeLayout>
+</android.widget.RelativeLayout>

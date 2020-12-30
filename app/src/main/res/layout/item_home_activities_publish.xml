@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bai">
+
+    <android.widget.LinearLayout
+        android:id="@+id/al_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:orientation="vertical">
+
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="40px"
+            android:layout_marginRight="40px">
+
+            <TextView
+                android:id="@+id/tv_publish_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:text="【王者荣耀】9月5日全服不停机更新公告9月5日全服不停机更新公告"
+                android:textColor="@color/font_black_1"
+                android:textSize="15sp" />
+        </android.widget.LinearLayout>
+
+        <android.widget.LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="13px"
+            android:layout_marginRight="40px"
+            android:layout_marginBottom="13px">
+
+            <ImageView
+                android:layout_width="36px"
+                android:layout_height="36px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20px"
+                android:src="@drawable/activity_time_gray" />
+
+            <TextView
+                android:id="@+id/tv_publish_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="2017.09.11  14:28"
+                android:textColor="@color/font_gray"
+                android:textSize="40px" />
+        </android.widget.LinearLayout>
+
+        <View
+            android:id="@+id/vLine"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="20px"
+            android:layout_marginRight="40px"
+            android:layout_marginBottom="5px"
+            android:background="@color/e7_line" />
+    </android.widget.LinearLayout>
+
+</android.widget.LinearLayout>

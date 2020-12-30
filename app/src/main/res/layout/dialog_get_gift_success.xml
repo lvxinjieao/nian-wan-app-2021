@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.widget.RelativeLayout
+        android:layout_width="1004px"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/yuan_jiao_login_bg"
+        android:paddingBottom="60px">
+
+        <android.widget.RelativeLayout
+            android:id="@+id/img_get_gift_success_close"
+            android:layout_width="130px"
+            android:layout_height="130px"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/close" />
+        </android.widget.RelativeLayout>
+
+        <ImageView
+            android:id="@+id/vv"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40px"
+            android:layout_marginBottom="20px"
+            android:src="@drawable/pop_receive_successful" />
+
+        <TextView
+            android:id="@+id/tv_get_gift_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vv"
+            android:layout_centerHorizontal="true"
+            android:text="领取成功"
+            android:textColor="@color/font_black"
+            android:textSize="66px" />
+
+        <android.widget.LinearLayout
+            android:id="@+id/ll_get_gift_success_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_get_gift_success"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tv_get_gift_success_code_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_get_gift_success_copy_code"
+                android:layout_marginTop="30px"
+                android:text="礼包激活码:"
+                android:textColor="@color/font_black_1"
+                android:textSize="54px"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_get_gift_success_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_get_gift_success"
+                android:layout_marginTop="30px"
+                android:layout_toRightOf="@+id/tv_get_gift_success_code_tips"
+                android:text="加载中..."
+                android:textColor="@color/green"
+                android:textSize="54px" />
+        </android.widget.LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_get_gift_success_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_get_gift_success_middle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30px"
+            android:text="可在[我的礼包]中查看"
+            android:textColor="@color/font_gray"
+            android:textSize="54px" />
+
+        <TextView
+            android:id="@+id/tv_get_gift_success_copy_code"
+            android:layout_width="620px"
+            android:layout_height="120px"
+            android:layout_below="@+id/tv_get_gift_success_summary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40px"
+            android:background="@drawable/yuan_jiao_green_bg"
+            android:gravity="center"
+            android:text="复制激活码"
+            android:textColor="@color/bai"
+            android:textSize="60px" />
+    </android.widget.RelativeLayout>
+</android.widget.RelativeLayout>

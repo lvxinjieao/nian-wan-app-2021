@@ -1,0 +1,195 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+
+    <style name="BalanceTabLayoutTextAppearance" parent="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textSize">56px</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">normal</item>
+        <!--<item name="android:textColor">@color/black</item>-->
+    </style>
+    <!--    <style name="MyTabLayoutTextAppearanceInverse" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+            <item name="android:textSize">15sp</item>
+            <item name="android:textColor">@android:color/holo_red_light</item>
+        </style>-->
+
+
+    <!-- 自定义样式的name属性用于引用，父亲是默认的style -->
+    <style name="MCProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <!-- 最大高度50dp，最小高度10dp，进度值确定，Drawable样式文件引用 -->
+        <item name="android:maxHeight">50dp</item>
+        <item name="android:minHeight">10dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/mch_progressbar</item>
+    </style>
+
+
+    <style name="ProgressBar_Mini1" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">50.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/progressbar_mini1</item>
+        <item name="android:minHeight">8.0dip</item>
+    </style>
+
+    <!--弹出登录注册对话框样式-->
+    <style name="MCCustomDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item><!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+        <!-- 背景颜色及透明程度 -->
+        <item name="android:windowBackground">@drawable/mc_platform_dialog_back</item>
+        <item name="android:backgroundDimEnabled">false</item><!-- 是否模糊 -->
+    </style>
+
+    <!--自定义主题名称-->
+    <style name="Splash_full_SCREEN" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--自定义主题名称-->
+    <style name="First_Into_full_SCREEN" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <!-- 点击立即邀请从底部弹出对话框样式 -->
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_buttom_out</item>
+    </style>
+
+
+    <!-- 低栏RadioButton的样式 -->
+    <style name="BottomTabStyle1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textColor">@drawable/radio_text_selector</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <style name="MyDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        ;!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        ;!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        ;!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        ;!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        ;!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        ;!-- 模糊 -->
+    </style>
+
+
+    <!-- 福利RadioButton的样式 -->
+    <style name="BottomTabStyle_fuli">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textColor">@drawable/radio_text_selector</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+
+    <style name="GameCollecteStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+        <item name="android:backgroundDimAmount">0.0</item>
+    </style>
+
+
+    <style name="TextStyle">
+        <item name="android:textColor">@color/bai</item>
+        <item name="android:alpha">0.6</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="home_store_get_store_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+
+
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="push_style">
+        <item name="android:hint">@string/style_hint</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="push_alias">
+        <item name="android:hint">@string/alias_hint</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="push_tag">
+        <item name="android:hint">@string/tag_hint</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="push_mobilenumber">
+        <item name="android:hint">@string/mobilenumber_hint</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <!-- 圆点指示器 -->
+    <declare-styleable name="XCircleIndicator">
+        <!-- 被选中圆点的颜色 -->
+        <attr name="fillColor" format="color" />
+        <!-- 未选中圆点的颜色 -->
+        <attr name="strokeColor" format="color" />
+        <!-- 圆点的大小 -->
+        <attr name="radius" format="dimension" />
+        <!-- 圆点间间距的大小 -->
+        <attr name="circleInterval" format="dimension" />
+    </declare-styleable>
+
+    <style name="tablayouttextstyle" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai"
+    android:orientation="vertical">
+
+    <include layout="@layout/other_head" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/home_activity_invite_img" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:orientation="horizontal"
+                android:paddingTop="40px">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/xx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="累计奖励（平台币）"
+                            android:textColor="@color/zi_hei"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/pingtaibi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/xx"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40px"
+                            android:text="0"
+                            android:textColor="@color/juhuang"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="60px"
+                    android:layout_marginBottom="60px"
+                    android:background="@color/zi_hui" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/cc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="成功邀请好友"
+                            android:textColor="@color/zi_hei"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/haoyou"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/cc"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="40px"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/zhuse_lan"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/home_activity_invite_img_rule"
+                android:gravity="center"
+                android:text="奖励规则"
+                android:textColor="@color/zhuse_lan"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/guize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="100px"
+                android:lineSpacingExtra="1.3dp"
+                android:textColor="@color/dialog_context"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/yaoqing"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/zhi_jiao_green"
+                android:gravity="center"
+                android:text="立即邀请"
+                android:textColor="@color/green"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

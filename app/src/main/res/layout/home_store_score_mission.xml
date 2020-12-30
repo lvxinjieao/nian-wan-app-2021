@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ed_line"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/tou"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/zhuse_lan" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/zhuse_lan"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_home_store_score_mission_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">=
+
+                    <ImageView
+                        android:id="@+id/tv_home_store_mission_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/left_white" />
+
+                    <TextView
+                        android:id="@+id/tv_shop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20px"
+                        android:layout_toRightOf="@+id/tv_home_store_mission_back"
+                        android:text="商城"
+                        android:textColor="@color/font_white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_vertical"
+                    android:text="积分任务"
+                    android:textColor="@color/font_white"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/img_home_store_score_mission_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@+id/img_home_store_score_mission_help"
+                    android:src="@drawable/nav_mall_record" />
+
+                <ImageView
+                    android:id="@+id/img_home_store_score_mission_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/nav_mall_rule" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="160px">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_home_store_score_mission_mine_score_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的积分："
+                        android:textColor="@color/font_white1"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_home_store_score_mission_mine_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/tv_home_store_score_mission_mine_score_tip"
+                        android:text="0"
+                        android:textColor="@color/font_yellow2"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_home_store_sign_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_margin="15dp"
+                    android:background="@color/bai">
+
+                    <ImageView
+                        android:id="@+id/img_home_store_score_mission"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/mall_task_sign" />
+
+                    <TextView
+                        android:id="@+id/tv_home_store_score_mission_go_sign"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/home_store_score_mission_sign_shape"
+                        android:gravity="center"
+                        android:text="去签到"
+                        android:textColor="@color/font_white"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/tv_home_store_score_mission_go_sign"
+                        android:layout_toRightOf="@+id/img_home_store_score_mission"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_sign_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/img_home_store_score_mission"
+                            android:layout_alignTop="@+id/tv_home_store_score_mission_go_sign"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="每日签到"
+                            android:textColor="@color/font_black_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_sign_message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="今日签到可获积分"
+                            android:textColor="@color/font_black_2"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:id="@+id/tv_sign_point"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:drawableLeft="@drawable/mall_task_integral"
+                            android:drawablePadding="5dp"
+                            android:text="+0"
+                            android:textColor="@color/font_red"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_home_store_bind_phone_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_below="@+id/ll_home_store_sign_layout"
+                    android:layout_margin="15dp"
+                    android:background="@color/bai">
+
+                    <ImageView
+                        android:id="@+id/img_home_store_score_mission_bind_phone"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/mall_task_bind" />
+
+                    <TextView
+                        android:id="@+id/tv_home_store_score_mission_go_bind_phone"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/home_store_score_mission_bind_phone_shape"
+                        android:gravity="center"
+                        android:text="去绑定"
+                        android:textColor="@color/font_white"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/tv_home_store_score_mission_go_bind_phone"
+                        android:layout_toRightOf="@+id/img_home_store_score_mission_bind_phone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_bind_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="绑定手机号"
+                            android:textColor="@color/font_black_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_bind_message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="绑定手机号赠送积分"
+                            android:textColor="@color/font_black_2"
+                            android:textSize="14sp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_bind_point"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/mall_task_integral"
+                                android:drawablePadding="5dp"
+                                android:text="+0"
+                                android:textColor="@color/font_red"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="（每个账号仅限首次绑定）"
+                                android:textColor="@color/font_red"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_home_store_first_pay_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_below="@+id/ll_home_store_bind_phone_layout"
+                    android:layout_margin="15dp"
+                    android:background="@color/bai">
+
+                    <ImageView
+                        android:id="@+id/img_home_store_score_mission_first_pay"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/mall_task_first" />
+
+                    <TextView
+                        android:id="@+id/tv_home_store_score_mission_start_first_pay"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/home_store_score_mission_first_pay_shape"
+                        android:gravity="center"
+                        android:text="开始"
+                        android:textColor="@color/font_white"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/tv_home_store_score_mission_start_first_pay"
+                        android:layout_toRightOf="@+id/img_home_store_score_mission_first_pay"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_rechargegame_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="每日游戏首充"
+                            android:textColor="@color/font_black_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_rechargegame_message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="每日首次充值任意一款游戏"
+                            android:textColor="@color/font_black_2"
+                            android:textSize="14sp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_rechargegame_point"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/mall_task_integral"
+                                android:drawablePadding="5dp"
+                                android:text="+0"
+                                android:textColor="@color/font_red"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="（绑币除外）"
+                                android:textColor="@color/search_zi"
+                                android:textSize="35px" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_home_store_game_pay_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_below="@+id/ll_home_store_first_pay_layout"
+                    android:layout_margin="15dp"
+                    android:background="@color/bai">
+
+                    <ImageView
+                        android:id="@+id/img_home_store_score_mission_game_pay"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/mall_task_pay" />
+
+                    <TextView
+                        android:id="@+id/tv_home_store_score_mission_start_game_pay"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/home_store_score_mission_game_pay_shape"
+                        android:gravity="center"
+                        android:text="开始"
+                        android:textColor="@color/font_white"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/tv_home_store_score_mission_start_game_pay"
+                        android:layout_toRightOf="@id/img_home_store_score_mission_game_pay"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_recharge_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="游戏充值"
+                            android:textColor="@color/font_black_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_recharge_message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="每充值1元即可获得10积分"
+                            android:textColor="@color/font_black_2"
+                            android:textSize="14sp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawablePadding="5dp"
+                                android:text="长期有效"
+                                android:textColor="@color/font_black_2"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="（绑币除外）"
+                                android:textColor="@color/search_zi"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/ll_home_store_yaoqing_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_below="@+id/ll_home_store_first_pay_layout"
+                    android:layout_margin="15dp"
+                    android:background="@color/bai">
+
+                    <ImageView
+                        android:id="@+id/img_home_store_score_mission_yaoqing"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/my_yaoqing" />
+
+                    <TextView
+                        android:id="@+id/tv_home_store_score_mission_start_yaoqing"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/home_store_score_mission_yaoqing_shape"
+                        android:gravity="center"
+                        android:text="去邀请"
+                        android:textColor="@color/font_white"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/tv_home_store_score_mission_start_yaoqing"
+                        android:layout_toRightOf="@id/img_home_store_score_mission_yaoqing"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_yaoqing_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="邀请好友注册"
+                            android:textColor="@color/font_black_1"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_yaoqing_message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="每邀请成功一个玩家即可获得1积分"
+                            android:textColor="@color/font_black_2"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_yaoqing_point"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:drawableLeft="@drawable/mall_task_integral"
+                            android:drawablePadding="5dp"
+                            android:text="+0"
+                            android:textColor="@color/font_red"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>

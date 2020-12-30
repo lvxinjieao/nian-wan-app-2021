@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_sreach_hread" android:id="@+id/search_head"/>
+    <LinearLayout
+        android:layout_below="@+id/search_head"
+        android:id="@+id/tou"
+        android:background="#f1f3f2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RadioGroup
+            android:id="@+id/id_radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+             >
+
+            <RadioButton
+                android:id="@+id/id_libao"
+                style="@style/BottomTabStyle_fuli"
+                android:text="礼包"
+                />
+
+            <RadioButton
+                android:id="@+id/id_kaifu"
+                style="@style/BottomTabStyle_fuli"
+                android:text="开服"
+                />
+
+            <RadioButton
+                android:id="@+id/id_huidong"
+                style="@style/BottomTabStyle_fuli"
+                android:text="活动"
+                 />
+            <RadioButton
+                android:id="@+id/id_xinwen"
+                style="@style/BottomTabStyle_fuli"
+                android:text="新闻"
+                />
+        </RadioGroup>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="15dp"
+        android:layout_height="2dp"
+        android:background="@mipmap/login_img_line"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/frame_gift"
+        android:layout_below="@+id/tou"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.widget.RelativeLayout
+        android:layout_marginRight="40px"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <TextView
+            android:id="@+id/tv_home_gift_detail_get_gift"
+            android:layout_width="170px"
+            android:layout_height="98px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30px"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bian_kuang_green"
+            android:gravity="center"
+            android:text="去领取"
+            android:textColor="@color/zhuse_lan"
+            android:textSize="44px" />
+
+        <android.widget.RelativeLayout
+            android:id="@+id/rl_search_game_gift_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@id/tv_home_gift_detail_get_gift"
+            android:layout_centerVertical="true">
+            <com.nian.wan.app.view.ShapeImageView
+                android:id="@+id/img_home_gift_detail_game_pic"
+                android:layout_width="184px"
+                android:layout_height="184px"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_picture"
+                app:borderRadius="20px"
+                app:radiusType="round" />
+
+            <android.widget.LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_home_gift_detail_game_pic"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_home_gift_detail_game_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="[狂野飚车8:极速凌云]11月特权礼包"
+                    android:textColor="@color/zi_hei"
+                    android:textSize="44px" />
+
+                <TextView
+                    android:id="@+id/tv_home_gift_detail_gift_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="剩余：0"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/font_black_1"
+                    android:textSize="36px" />
+
+                <android.widget.LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="有效时间："
+                        android:textColor="@color/font_gray"
+                        android:textSize="36px" />
+
+                    <TextView
+                        android:id="@+id/tv_home_gift_detail_valid_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="17dp"
+                        android:layout_marginTop="3dp"
+                        android:text="2017.09.01~永久"
+                        android:textColor="@color/font_gray"
+                        android:textSize="36px" />
+
+                </android.widget.LinearLayout>
+
+            </android.widget.LinearLayout>
+        </android.widget.RelativeLayout>
+
+
+    </android.widget.RelativeLayout>
+
+</android.widget.RelativeLayout>

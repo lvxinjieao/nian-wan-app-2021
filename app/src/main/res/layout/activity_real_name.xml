@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai"
+    android:orientation="vertical">
+
+    <include layout="@layout/other_head" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="真实姓名"
+            android:textColor="@color/zi_hui1"
+            android:textSize="16dp" />
+
+        <CheckBox
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/login_password"
+            android:button="@null"
+            android:checked="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/my_password_btn_delete"
+              android:visibility="gone" />
+
+        <EditText
+            android:background="@drawable/edit_bg"
+            android:id="@+id/edt_real_name_your_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="90dp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:hint="请输入您的真实姓名"
+            android:inputType="" android:maxLength="20"
+            android:textColor="@color/zi_hei"
+            android:textColorHint="@color/zi_hui2"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="证件号码"
+            android:textColor="@color/zi_hui1"
+            android:textSize="16dp" />
+
+        <CheckBox
+            android:id="@+id/cb_xin"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/login_eyes"
+            android:button="@null"
+            android:checked="true"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/xin_deleta"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/cb_xin"
+            android:background="@mipmap/my_password_btn_delete"
+              android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edt_real_name_id_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="90dp"
+            android:paddingLeft="10dp"
+            android:layout_toLeftOf="@id/xin_deleta"
+            android:background="@drawable/edit_bg"
+            android:digits="@string/id_card_filter_vcode"
+            android:gravity="center_vertical"
+            android:hint="请输入您的身份证号"
+            android:inputType="number"
+            android:maxLength="20"
+            android:textColor="@color/zi_hei"
+            android:textColorHint="@color/zi_hui2"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_real_name_sumbit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/zhi_jiao_gray"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="提交"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_real_name_error_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60px"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/my_password_img_prompt" />
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="身份证号码已被认证，不可重复认证"
+            android:textColor="@color/zhuse_hong"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="15dp"
+        android:lineSpacingExtra="20px"
+        android:text="根据2010年8月1日实施的《网络游戏管理暂行办法》，网络游戏用户需使用有效身份证件进行实名认证。为保证游戏流畅体验，享受健康游戏生活，请广大玩家尽快实名认证，且每个身份证件号码只能认证一次。"
+        android:textColor="@color/font_gray" />
+
+</LinearLayout>

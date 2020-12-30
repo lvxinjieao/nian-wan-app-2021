@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/bai"
+    android:orientation="vertical">
+
+    <android.widget.RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="20px">
+
+        <android.widget.RelativeLayout
+            android:id="@+id/layout_icon"
+            android:layout_width="190px"
+            android:layout_height="180px"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal">
+            <com.nian.wan.app.view.ShapeImageView
+                android:id="@+id/img_my_gift_hot_pic"
+                android:layout_width="180px"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"
+                android:src="@drawable/default_picture"
+                app:borderRadius="20px"
+                app:radiusType="round" />
+            <ImageView
+                android:id="@+id/img_tag"
+                android:layout_width="110px"
+                android:layout_height="60px"
+                android:background="@mipmap/tag_h5"
+                android:layout_alignParentRight="true"/>
+        </android.widget.RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_my_gift_hot_get"
+            android:layout_width="190px"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bian_kuang_green"
+            android:gravity="center"
+            android:text="去领取"
+            android:textColor="@color/zhuse_lan"
+            android:textSize="40px" />
+
+        <android.widget.LinearLayout
+            android:id="@+id/ll_my_gift_hot_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_marginBottom="20px"
+            android:layout_toLeftOf="@+id/tv_my_gift_hot_get"
+            android:layout_toRightOf="@+id/layout_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_my_gift_hot_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="[ 极速摩托 ] 3月新版特权礼包[ 极速摩托 ] 3月新版特权礼包"
+                android:textColor="@color/zi_hei"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_my_gift_hot_percent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:text="剩余：0"
+                android:textColor="@color/zi_hui1"
+                android:layout_marginTop="10px"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/tv_my_gift_hot_validity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="有效期：2017-04-28 至 2017-03-23"
+                android:textColor="@color/zi_hui1"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/con"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="礼包内容：xxxxxx"
+                android:textColor="@color/zi_hui1"
+                android:textSize="14dp"
+                android:visibility="gone" />
+        </android.widget.LinearLayout>
+    </android.widget.RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/xian_shen" />
+</android.widget.LinearLayout>

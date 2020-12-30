@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+
+        <TextView
+            android:id="@+id/tv_racking"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/racking_bg"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/white" />
+
+        <com.nian.wan.app.view.ShapeImageView
+            android:id="@+id/img_icon"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30px"
+            android:layout_toRightOf="@id/tv_racking"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_picture"
+            app:borderRadius="10dp"
+            app:radiusType="round" />
+
+        <TextView
+            android:id="@+id/btn_start"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bian_kuang_red"
+            android:gravity="center"
+            android:text="开始游戏"
+            android:textColor="@color/theme_red" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@id/btn_start"
+            android:layout_toRightOf="@id/img_icon"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10px"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="加载中..."
+                android:textColor="@color/text_black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_hint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="大小：0M"
+                android:textColor="@color/gray"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5px"
+                android:text="类型：加载中"
+                android:textColor="@color/gray"
+                android:textSize="13sp" />
+
+            <include
+                layout="@layout/layout_download"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

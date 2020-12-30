@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--2017-10-14 11:53:48-->
+    <color name="transparent">#99000000</color>
+    <color name="transparent_1">#10000000</color>
+    <color name="dialog_activity_bg">#ffffffff</color>
+    <color name="dialog_activity_tittle">#fffbfbfb</color>
+    <color name="font_white">#fffbfbfb</color>
+    <color name="font_white1">#ffffff</color>
+    <color name="font_yellow">#ffff00</color>
+    <color name="font_yellow1">#FF9700</color>
+    <color name="font_yellow2">#ffff00</color>
+    <color name="font_d2d2d2">#d2d2d2</color>
+    <color name="font_f1f1f1">#f1f1f1</color>
+    <color name="font_f5f5f5">#f5f5f5</color>
+    <color name="font_000000">#000000</color>
+    <color name="font_black">#000</color>
+    <color name="font_black_1">#333333</color>
+    <color name="font_black_2">#666666</color>
+    <!--    <color name="font_blue">#23bbf3</color>-->
+    <color name="text_black">#333333</color>
+    <color name="font_gray">#999999</color>
+    <color name="font_gray_1">#c0c0c0</color>
+    <color name="font_gray_2">#cccccc</color>
+    <color name="font_gray_3">#757575</color>
+    <color name="font_806c6c6c">#806c6c6c</color>
+    <color name="ffffff">#ffffff</color>
+    <!--    <color name="c3c95c8">#3c95c8</color>-->
+    <color name="ebebf0">#ebebf0</color>
+    <color name="font_orange">#ff7700</color>
+    <color name="font_orange1">#E8532E</color>
+    <color name="font_orange2">#FFD55C</color>
+    <color name="font_red">#ff3228</color>
+    <color name="font_green">#28cb60</color>
+    <color name="f4f4f4">#f4f4f4</color>
+    <color name="ed_line">#ededed</color>
+    <color name="e7_line">#e7e7e7</color>
+    <color name="e0_line">#e0e0e0</color>
+    <color name="d9_line">#d9d9d9</color>
+    <color name="transparent_note">#00000000</color>
+    <color name="line">#DDDDDD</color>
+    <color name="title_blue">#309FF0</color>
+    <color name="my_collection_swipe_delete">#EDEDED</color>
+    <color name="recently_play">#ff7700</color>
+    <color name="zi_hui">#FF838B8B</color>
+    <color name="zi_huang">#ffb643</color>
+    <color name="zi_shui">#eeeeee</color>
+    <!---->
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="search">#008fc7</color>
+    <color name="search_zi">#a9a9a9</color>
+    <color name="xian">#e3e3e3</color>
+    <color name="zi">#000</color>
+    <color name="test2">#ea4937</color>
+    <color name="test1">#cccccc</color>
+    <color name="touming">#00000000</color>
+    <color name="btfive1">#1f2b1f</color>
+    <color name="btfive2">#16251e</color>
+    <color name="unbtn">#222222</color>
+    <color name="btn">#000</color>
+    <color name="textc">#f9c35f</color>
+    <color name="green0">#C2EA72</color>
+    <color name="green">#99CC33</color>
+    <color name="green1">#547E02</color>
+    <color name="gray">#B7B7B7</color>
+    <color name="gray2">#636363</color>
+    <color name="gray3">#EDEDED</color>
+    <color name="icon_gray">#A5A5A5</color>
+
+    <color name="shgray">#444444</color>
+    <color name="qiangray">#D1D1D1</color>
+    <color name="bai">#fff</color>
+    <color name="mygr">#BFBFBF</color>
+    <color name="zise">#9A32CD</color>
+    <color name="theme_black_textcolor">#ff222222</color>
+    <color name="theme_red">#FF0000</color>
+    <color name="black_light">#222222</color>
+    <color name="gray_light">#fff8f8f8</color>
+    <color name="theme_yellow">#ffffaa00</color>
+    <color name="theme_cheng">#FF6347</color>
+    <color name="theme_green">#ff00bb00</color>
+    <color name="huang">#EEEE00</color>
+    <!--    <color name="lan">#1ab3ef</color>-->
+    <color name="hong">#cc3333</color>
+    <color name="fenhong">#EE00EE</color>
+    <color name="juhuang">#FF7F00</color>
+    <color name="lv">#5fab11</color>
+    <color name="hui">#445247</color>
+    <color name="type">#2f8836</color>
+    <color name="dialog_context">#a3a3a3</color>
+
+    <color name="gradient_button">#3d54e0</color>
+    <color name="gradient_top">#1eced4</color>
+    <color name="dialog_title">#747474</color>
+
+    <!--<color name="zhuse_lan">#23BBF4</color>-->
+    <color name="zhuse_lan">#99CC33</color>
+    <color name="zhuse_hui">#c2c2c2</color>
+    <color name="zhuse_hong">#ff5363</color>
+    <color name="zhuse_huang">#ffff00</color>
+    <color name="zi_hei">#333333</color>
+    <color name="title_hei">#c2c2c2</color>
+    <color name="zi_hui1">#666666</color>
+    <color name="zi_hui2">#999999</color>
+    <color name="zi_hui3">#bebebe</color>
+    <color name="bg_qian">#efefef</color>
+    <color name="bg_shen">#ebf0f2</color>
+    <color name="xian_qian">#e1e6ec</color>
+    <color name="xian_shen">#dcdcdc</color>
+
+    <color name="qamaster_yellow">#f1c40f</color>
+
+    <color name="home_ranking_top1_gamename_bg">#F19E38</color>
+    <color name="home_ranking_top1_down_bg">#EE8131</color>
+    <color name="home_ranking_top2_gamename_bg">#EB5149</color>
+    <color name="home_ranking_top2_down_bg">#D73B31</color>
+    <color name="home_ranking_top3_gamename_bg">#65ABF7</color>
+    <color name="home_ranking_top3_down_bg">#4C8FF5</color>
+
+    <color name="text_color">#393737</color>
+
+</resources>

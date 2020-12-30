@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.widget.RelativeLayout
+        android:layout_width="1100px"
+        android:layout_height="900px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/yuan_jiao_white_bg">
+
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_RQ_Code"
+                android:layout_width="450px"
+                android:layout_height="450px"
+                android:layout_marginBottom="20px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="关注公众号可领取礼包"
+                android:textColor="@color/text_black"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:gravity="center"
+                android:text="微信内打开识别二维码，关注公众号进入小程序"
+                android:textColor="@color/gray"
+                android:textSize="13sp" />
+
+            <android.widget.LinearLayout
+                android:id="@+id/btn_save_code"
+                android:layout_width="wrap_content"
+                android:layout_height="150px"
+                android:layout_marginTop="50px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_marginRight="20px"
+                    android:background="@drawable/icon_normal_xiazai" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="保存二维码到相册"
+                    android:textColor="@color/zhuse_lan"
+                    android:textSize="18sp" />
+            </android.widget.LinearLayout>
+
+        </android.widget.LinearLayout>
+
+        <android.widget.RelativeLayout
+            android:id="@+id/btn_close"
+            android:layout_width="180px"
+            android:layout_height="160px"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/close" />
+        </android.widget.RelativeLayout>
+    </android.widget.RelativeLayout>
+
+</android.widget.RelativeLayout>

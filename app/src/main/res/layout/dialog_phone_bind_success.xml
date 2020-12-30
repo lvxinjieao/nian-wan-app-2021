@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.widget.RelativeLayout
+        android:layout_width="1006px"
+        android:layout_height="774px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/yuan_jiao_login_bg">
+
+        <android.widget.RelativeLayout
+            android:id="@+id/img_bind_phone_success_close"
+            android:layout_width="130px"
+            android:layout_height="130px"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/close" />
+        </android.widget.RelativeLayout>
+
+        <ImageView
+            android:id="@+id/vv"
+            android:layout_width="420px"
+            android:layout_height="420px"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/pop_bind_successfully" />
+
+        <TextView
+            android:id="@+id/tv_phone_bind_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vv"
+            android:layout_centerHorizontal="true"
+            android:text="绑定成功!获得100积分!"
+            android:textColor="@color/zi_hei"
+            android:textSize="65px" />
+
+        <TextView
+            android:id="@+id/tv_bind_phone_success_go_get"
+            android:layout_width="620px"
+            android:layout_height="140px"
+            android:layout_below="@id/tv_phone_bind_success"
+            android:layout_alignLeft="@+id/tv_phone_bind_success"
+            android:layout_alignRight="@+id/tv_phone_bind_success"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45px"
+            android:background="@drawable/yuan_jiao_green_bg"
+            android:gravity="center"
+            android:text="查看积分"
+            android:textColor="@color/bai"
+            android:textSize="17dp" />
+    </android.widget.RelativeLayout>
+</android.widget.RelativeLayout>

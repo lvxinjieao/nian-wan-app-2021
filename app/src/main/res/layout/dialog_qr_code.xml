@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.widget.RelativeLayout
+        android:layout_width="1000px"
+        android:layout_height="1060px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/yuan_jiao_white_bg">
+
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60px"
+                android:layout_marginBottom="40px"
+                android:gravity="center"
+                android:text="关注溪谷软件"
+                android:textColor="@color/text_black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/img_RQ_Code"
+                android:layout_width="450px"
+                android:layout_height="450px"
+                android:layout_marginBottom="30px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80px"
+                android:layout_marginRight="80px"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.1"
+                android:text="截屏保存二维码至相册，打开微信“扫一扫”点击右上角“相册”选取本二维码完成关注"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <android.widget.LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/btn_jump_wechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/qrcode_icon_baocun"
+                    android:drawablePadding="20px"
+                    android:gravity="center"
+                    android:text="我已截屏保存，现在打开微信"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="@color/gray" />
+            </android.widget.LinearLayout>
+
+        </android.widget.LinearLayout>
+
+        <android.widget.RelativeLayout
+            android:id="@+id/btn_close"
+            android:layout_width="160px"
+            android:layout_height="150px"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/close" />
+        </android.widget.RelativeLayout>
+    </android.widget.RelativeLayout>
+
+</android.widget.RelativeLayout>

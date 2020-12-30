@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.mc.developmentkit.views.SpringView
+        android:id="@+id/springView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_racking_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_ranking_top2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_top2_gamename"
+                            android:layout_width="115dp"
+                            android:layout_height="100dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="80dp"
+                            android:background="@drawable/home_ranking_top2_gamename_bg"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal|bottom"
+                            android:maxLines="1"
+                            android:paddingBottom="20px"
+                            android:text="加载中..."
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/btn_top2_down"
+                            android:layout_width="115dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/tv_top2_gamename"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/home_ranking_top2_down_bg"
+                            android:gravity="center"
+                            android:text="下载游戏"
+                            android:textColor="@color/text_black"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:id="@+id/huangguan_2"
+                            android:layout_width="45dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15sp"
+                            android:background="@mipmap/home_icon_ranking2" />
+
+                        <RelativeLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_below="@id/huangguan_2"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/home_ranking_icon_bg"
+                            android:padding="1px">
+
+                            <com.nian.wan.app.view.ShapeImageView
+                                android:id="@+id/img_top2_gamaicon"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:scaleType="fitXY"
+                                app:borderRadius="10dp"
+                                app:radiusType="round" />
+                        </RelativeLayout>
+
+                        <!--覆盖在最外层，点击进入游戏详情页的按钮-->
+                        <TextView
+                            android:id="@+id/btn_top2_detail"
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="100px"
+                            android:paddingBottom="20px" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_ranking_top1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_top1_gamename"
+                            android:layout_width="115dp"
+                            android:layout_height="100dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="60dp"
+                            android:background="@drawable/home_ranking_top1_gamename_bg"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal|bottom"
+                            android:maxLines="1"
+                            android:paddingBottom="20px"
+                            android:text="加载中..."
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/btn_top1_down"
+                            android:layout_width="115dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/tv_top1_gamename"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/home_ranking_top1_down_bg"
+                            android:gravity="center"
+                            android:text="下载游戏"
+                            android:textColor="@color/text_black"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:id="@+id/huangguan_1"
+                            android:layout_width="45dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@mipmap/home_icon_ranking1" />
+
+                        <RelativeLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_below="@id/huangguan_1"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/home_ranking_icon_bg"
+                            android:padding="1px">
+
+                            <com.nian.wan.app.view.ShapeImageView
+                                android:id="@+id/img_top1_gamaicon"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:scaleType="fitXY"
+                                app:borderRadius="10dp"
+                                app:radiusType="round" />
+                        </RelativeLayout>
+                        <!--覆盖在最外层，点击进入游戏详情页的按钮-->
+                        <TextView
+                            android:id="@+id/btn_top1_detail"
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="60px"
+                            android:paddingBottom="20px" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_ranking_top3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_top3_gamename"
+                            android:layout_width="115dp"
+                            android:layout_height="100dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="80dp"
+                            android:background="@drawable/home_ranking_top3_gamename_bg"
+                            android:ellipsize="end"
+                            android:gravity="center_horizontal|bottom"
+                            android:maxLines="1"
+                            android:paddingBottom="20px"
+                            android:text="加载中..."
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/btn_top3_down"
+                            android:layout_width="115dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@id/tv_top3_gamename"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/home_ranking_top3_down_bg"
+                            android:gravity="center"
+                            android:text="下载游戏"
+                            android:textColor="@color/text_black"
+                            android:textSize="13sp" />
+
+                        <ImageView
+                            android:id="@+id/huangguan_3"
+                            android:layout_width="45dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15sp"
+                            android:background="@mipmap/home_icon_ranking3" />
+
+                        <RelativeLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_below="@id/huangguan_3"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/home_ranking_icon_bg"
+                            android:padding="1px">
+
+                            <com.nian.wan.app.view.ShapeImageView
+                                android:id="@+id/img_top3_gamaicon"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:scaleType="fitXY"
+                                app:borderRadius="10dp"
+                                app:radiusType="round" />
+                        </RelativeLayout>
+                        <!--覆盖在最外层，点击进入游戏详情页的按钮-->
+                        <TextView
+                            android:id="@+id/btn_top3_detail"
+                            android:layout_width="125dp"
+                            android:layout_height="125dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="100px"
+                            android:paddingBottom="20px" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/error_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="365px"
+                        android:layout_height="365px"
+                        android:src="@drawable/no_date" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="~空空如也~"
+                        android:textColor="@color/font_gray_1" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/list_ranking"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:overScrollMode="never"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </ScrollView>
+    </com.mc.developmentkit.views.SpringView>
+</LinearLayout>

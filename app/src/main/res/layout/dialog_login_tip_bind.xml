@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <android.widget.RelativeLayout
+        android:layout_width="900px"
+        android:layout_height="900px"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/img_pop_bind_close"
+            android:layout_width="90px"
+            android:layout_height="90px"
+            android:layout_alignParentRight="true"
+              android:src="@drawable/pop_binding_close" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/img_pop_bind_close"
+              android:src="@drawable/pop_binding" />
+
+        <TextView
+            android:id="@+id/tv_pop_bind_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_go_bind"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10px"
+            android:text="送200积分"
+            android:textColor="@color/white"
+            android:textSize="48px" />
+
+        <TextView
+            android:id="@+id/tv_go_bind"
+            android:layout_width="300px"
+            android:layout_height="120px"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60px"
+            android:background="@drawable/login_tip_bind_shape"
+            android:gravity="center"
+            android:text="去绑定"
+            android:textColor="@color/font_orange1"
+            android:textSize="48px" />
+    </android.widget.RelativeLayout>
+</android.widget.RelativeLayout>

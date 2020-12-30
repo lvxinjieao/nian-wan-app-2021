@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.nian.wan.app.view.VP
+        android:id="@+id/game_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tou"
+        android:background="#fff" />
+
+    <android.widget.RelativeLayout
+        android:id="@+id/tou"
+        android:layout_width="match_parent"
+        android:layout_height="152px"
+        android:layout_below="@+id/search_head"
+        android:background="@color/zhuse_lan">
+
+        <android.widget.LinearLayout
+            android:layout_width="840px"
+            android:layout_height="110px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/game_top_tab_shape"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_game_commend"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/game_top_tab_shape_normal"
+                android:text="推荐"
+                android:textColor="@color/green" />
+            <TextView
+                android:id="@+id/tv_game_hot"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="热门"
+                android:textColor="@color/font_white" />
+            <TextView
+                android:id="@+id/tv_game_new"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="新上架"
+                android:textColor="@color/font_white"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tv_game_subject"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="分类"
+                android:textColor="@color/font_white" />
+        </android.widget.LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_game_head_search"
+            android:layout_width="66px"
+            android:layout_height="66px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="60px"
+              android:src="@drawable/nav_btn_search" />
+    </android.widget.RelativeLayout>
+</android.widget.RelativeLayout>

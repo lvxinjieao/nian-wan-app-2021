@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai"
+    android:orientation="vertical">
+
+    <include layout="@layout/other_head" />
+
+    <android.widget.RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edit_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="原手机号"
+            android:textColor="@color/zi_hui1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_replace_phone_original_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:gravity="center_vertical"
+            android:hint="152****5689"
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/zi_hui2"
+            android:textSize="14sp" />
+    </android.widget.RelativeLayout>
+
+    <android.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+        <android.widget.RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="验证码"
+                android:textColor="@color/zi_hui1"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_replace_phone_verification_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="100dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/zi_hui2"
+                android:textSize="14sp" />
+        </android.widget.RelativeLayout>
+
+        <android.widget.RelativeLayout
+            android:layout_width="100dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_replace_phone_get_verification_code"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bian_kuang_green"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@color/zhuse_lan"
+                android:textSize="14sp" />
+
+            <android.widget.RelativeLayout
+                android:id="@+id/zhong"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_bg"
+                android:visibility="gone">
+
+                <android.widget.LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已发送"
+                        android:textColor="@color/zi_hui2"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/miao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:text="52"
+                        android:textColor="@color/zhuse_lan"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="s"
+                        android:textColor="@color/zhuse_lan"
+                        android:textSize="16dp" />
+                </android.widget.LinearLayout>
+            </android.widget.RelativeLayout>
+        </android.widget.RelativeLayout>
+    </android.widget.LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_replace_phone_next"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/zhi_jiao_gray"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/icon_gray"
+        android:textSize="16dp" />
+
+    <android.widget.LinearLayout
+        android:id="@+id/ll_check_code_error_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20px"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/my_password_img_prompt" />
+
+        <TextView
+            android:id="@+id/tv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/zhuse_hong"
+            android:textSize="14sp" />
+    </android.widget.LinearLayout>
+
+    <android.widget.LinearLayout
+        android:id="@+id/ll_replace_phone_custom_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="110px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机停用?"
+            android:textColor="@color/zi_hui3"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:text="联系客服"
+            android:textColor="@color/zhuse_lan"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="26px"
+            android:layout_height="60px"
+            android:layout_marginLeft="14px"
+            android:layout_marginRight="60px"
+            android:src="@drawable/game_classify_select" />
+    </android.widget.LinearLayout>
+</android.widget.LinearLayout>

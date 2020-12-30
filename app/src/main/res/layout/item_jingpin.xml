@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+
+    <com.nian.wan.app.view.MyImageView
+        android:id="@+id/icon"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <com.nian.wan.app.view.MyImageView
+            android:id="@+id/game_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/game_icon"
+            android:gravity="center"
+            android:maxLength="5"
+            android:text="xxxxxxxxxxxxxxx"
+            android:textColor="@color/gray2"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/ren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/game_icon"
+            android:text="111"
+            android:textColor="@color/zhuse_lan"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/ren"
+            android:text="人在玩"
+            android:textColor="@color/gray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/kaishi"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@id/game_icon"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_play"
+            android:gravity="center"
+            android:text="去玩"
+            android:textColor="@color/bai"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

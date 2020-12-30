@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/bai">
+
+        <com.nian.wan.app.view.MyImageView
+            android:id="@+id/icon"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/default_picture"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/fuzhi"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:background="@drawable/bian_kuang_green"
+            android:gravity="center"
+            android:text="复制"
+            android:textColor="@color/zhuse_lan"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/fuzhi"
+            android:layout_toRightOf="@id/icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxxx"
+                android:textColor="@color/zi_hei"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/gift_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="【xxxxx】"
+                android:textColor="@color/zi_hei"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="礼包码："
+                    android:textColor="@color/zi_hui2"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/jihuoma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="xxxxx"
+                    android:textColor="@color/zhuse_lan"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/youxiaoqi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:singleLine="true"
+                android:text="有效期：2017-xx-xx至2017-xx-xx"
+                android:textColor="@color/zi_hui2"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

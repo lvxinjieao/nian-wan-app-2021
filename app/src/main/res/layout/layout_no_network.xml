@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/error_layout">
+
+
+    <android.widget.RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="600px"
+        android:layout_height="400px"
+        android:background="@mipmap/my_network_img_not"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20px"
+        />
+    <TextView
+        android:id="@+id/error_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginBottom="40px"
+        android:textColor="@color/zi_hei"
+        android:textSize="16sp"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/tv_shuaxin"
+        android:layout_width="800px"
+        android:layout_height="160px"
+        android:text="刷 新"
+        android:textSize="17dp"
+        android:textColor="@color/bai"
+        android:background="@drawable/yuan_jiao_green_bg"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/error_text" />
+    </android.widget.RelativeLayout>
+</android.widget.LinearLayout>

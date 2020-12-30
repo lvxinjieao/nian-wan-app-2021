@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai"
+    android:orientation="vertical">
+
+
+    <!--<android.widget.LinearLayout-->
+    <!--android:id="@+id/ll_game_activities_tab"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:background="@drawable/game_activities_shape"-->
+    <!--android:padding="1px"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_huodong"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/zhuse_lan"-->
+    <!--android:gravity="center"-->
+    <!--android:text="活动"-->
+    <!--android:textColor="@color/font_white"-->
+    <!--android:textSize="16sp" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="1px"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/zhuse_lan" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_gonggao"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/white"-->
+    <!--android:gravity="center"-->
+    <!--android:text="公告"-->
+    <!--android:textColor="@color/zhuse_lan"-->
+    <!--android:textSize="16sp" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="1px"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/zhuse_lan" />-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_zixun"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/white"-->
+    <!--android:gravity="center"-->
+    <!--android:text="资讯"-->
+    <!--android:textColor="@color/zhuse_lan"-->
+    <!--android:textSize="16sp" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="1px"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/zhuse_lan" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_gonglue"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/white"-->
+    <!--android:gravity="center"-->
+    <!--android:text="攻略"-->
+    <!--android:textColor="@color/zhuse_lan"-->
+    <!--android:textSize="16sp" />-->
+    <!--</android.widget.LinearLayout>-->
+
+
+    <com.nian.wan.app.view.CollectionViewPager
+        android:id="@+id/vp_game_activities_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp" />
+</android.widget.LinearLayout>

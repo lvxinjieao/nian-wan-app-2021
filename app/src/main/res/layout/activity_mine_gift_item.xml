@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30px"
+            android:layout_marginLeft="40px"
+            android:text="[新手注册大礼包]"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </android.widget.LinearLayout>
+
+
+    <android.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_weight="0.023"
+            android:text="礼包码: " />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:text="1FDGO23AWEQ"
+            android:textColor="@color/zhuse_lan" />
+
+        <Button
+            android:layout_width="170px"
+            android:layout_height="88px"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.01"
+            android:background="@drawable/bian_kuang_green"
+            android:text="复制"
+            android:textColor="@color/zhuse_lan" />
+
+    </android.widget.LinearLayout>
+
+    <android.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="46px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="360px"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="魂币*30,洗练石*2,修炼*5,金币*18888888888888" />
+    </android.widget.LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/line" />
+
+    <View
+        android:id="@+id/sinh1"
+        android:layout_width="match_parent"
+        android:layout_height="30px"
+        android:layout_below="@+id/top1"
+        android:background="@color/ed_line" />
+</android.widget.LinearLayout>

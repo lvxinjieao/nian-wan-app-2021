@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bai"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@mipmap/home_activity_img_invite" />
+
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="320px"
+            android:orientation="horizontal">
+
+            <android.widget.RelativeLayout
+                android:id="@+id/qq"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.widget.LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="170px"
+                        android:layout_height="170px"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@mipmap/qq" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20px"
+                        android:text="QQ好友"
+                        android:textColor="@color/zi_hui"
+                        android:textSize="13dp" />
+                </android.widget.LinearLayout>
+            </android.widget.RelativeLayout>
+
+            <android.widget.RelativeLayout
+                android:id="@+id/weixin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.widget.LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="170px"
+                        android:layout_height="170px"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@mipmap/weixin" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20px"
+                        android:text="微信好友"
+                        android:textColor="@color/zi_hui"
+                        android:textSize="13dp" />
+                </android.widget.LinearLayout>
+            </android.widget.RelativeLayout>
+
+            <android.widget.RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.widget.LinearLayout
+                    android:id="@+id/pyq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="170px"
+                        android:layout_height="170px"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@mipmap/pengyouquan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20px"
+                        android:text="微信朋友圈"
+                        android:textColor="@color/zi_hui"
+                        android:textSize="13dp" />
+                </android.widget.LinearLayout>
+            </android.widget.RelativeLayout>
+
+            <android.widget.RelativeLayout
+                android:id="@+id/kongjian"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.widget.LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="170px"
+                        android:layout_height="170px"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@mipmap/kongjain" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20px"
+                        android:text="QQ空间"
+                        android:textColor="@color/zi_hui"
+                        android:textSize="13dp" />
+                </android.widget.LinearLayout>
+            </android.widget.RelativeLayout>
+
+            <android.widget.RelativeLayout
+                android:id="@+id/fuzhi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.widget.LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="170px"
+                        android:layout_height="170px"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@mipmap/home_activity_btn_invite_link" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20px"
+                        android:text="复制链接"
+                        android:textColor="@color/zi_hui"
+                        android:textSize="13dp" />
+                </android.widget.LinearLayout>
+            </android.widget.RelativeLayout>
+        </android.widget.LinearLayout>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@mipmap/home_activity_img_invite_x" />
+
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.widget.RelativeLayout
+                android:layout_width="500px"
+                android:layout_height="500px"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/zi_shui">
+
+                <ImageView
+                    android:id="@+id/erweima"
+                    android:layout_width="480px"
+                    android:layout_height="480px"
+                    android:layout_centerInParent="true" />
+            </android.widget.RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="120px"
+                android:text="长按保存二维码"
+                android:textColor="@color/zi_hei"
+                android:textSize="14dp" />
+        </android.widget.LinearLayout>
+    </android.widget.LinearLayout>
+</android.widget.RelativeLayout>

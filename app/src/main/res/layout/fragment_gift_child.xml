@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.mc.developmentkit.views.SpringView
+        android:id="@+id/springView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/gift_List"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:groupIndicator="@null"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+        </ListView>
+
+    </com.mc.developmentkit.views.SpringView>
+
+
+    <android.widget.LinearLayout
+        android:id="@+id/ll_home_store_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="365px"
+            android:layout_height="365px"
+            android:layout_gravity="center_horizontal"
+              android:src="@drawable/no_date" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="~空空如也~"
+            android:textColor="@color/font_gray_1" />
+    </android.widget.LinearLayout>
+
+</android.widget.LinearLayout>

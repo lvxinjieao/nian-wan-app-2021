@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.widget.RelativeLayout
+        android:layout_width="1006px"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="60px"
+        android:background="@drawable/yuan_jiao_white_bg">
+
+        <android.widget.RelativeLayout
+            android:id="@+id/img_get_gift_failed_close"
+            android:layout_width="130px"
+            android:layout_height="130px"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_centerInParent="true"
+                android:background="@drawable/close"/>
+        </android.widget.RelativeLayout>
+
+        <ImageView
+            android:id="@+id/vv"
+            android:layout_width="420px"
+            android:layout_height="420px"
+            android:layout_marginTop="30px"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/gift_defeated" />
+
+        <TextView
+            android:id="@+id/rr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vv"
+            android:layout_centerHorizontal="true"
+            android:text="领取失败！"
+            android:layout_marginTop="20px"
+            android:textColor="@color/zi_hei"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:text="您已领取过，给别人一个领取的机会吧"
+            android:layout_marginBottom="40px"
+            android:textColor="@color/zi_hui2"
+            android:layout_marginTop="30px"
+            android:layout_below="@id/rr"
+            android:textSize="14sp"
+            android:gravity="center"/>
+    </android.widget.RelativeLayout>
+
+</android.widget.RelativeLayout>

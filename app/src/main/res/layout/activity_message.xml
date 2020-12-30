@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/message_head"
+        layout="@layout/other_head" />
+
+
+    <android.widget.LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290px"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="290px"
+            android:layout_height="280px"
+            android:layout_gravity="center_horizontal"
+              android:src="@drawable/blank_news" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80px"
+            android:text="暂无消息通知"
+            android:textColor="@color/font_gray"
+            android:textSize="56px" />
+    </android.widget.LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/message_head">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</android.widget.RelativeLayout>

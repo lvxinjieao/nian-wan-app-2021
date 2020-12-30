@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_home_search"
+        android:visibility="visible" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartrefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlEnableLoadMore="false">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/Theme.AppCompat.Light">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+<!--                    app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"-->
+                    <!--轮播图-->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.stx.xhb.xbanner.XBanner xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@android:color/transparent"
+                            app:AutoPlayTime="5000"
+                            app:isAutoPlay="true"
+                            app:isShowIndicatorOnlyOne="false"
+                            app:isShowNumberIndicator="false"
+                            app:pageChangeDuration="1000"
+                            app:pointsPosition="CENTER" />
+                    </RelativeLayout>
+
+                    <!--排行榜 邀请 专区-->
+                    <!--                        <LinearLayout-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="50dp"-->
+                    <!--                            android:layout_marginLeft="10dp"-->
+                    <!--                            android:layout_marginRight="10dp"-->
+                    <!--                            android:background="@color/white"-->
+                    <!--                            android:gravity="center_vertical"-->
+                    <!--                            android:orientation="horizontal">-->
+
+                    <!--                            <LinearLayout-->
+                    <!--                                android:id="@+id/btn_home_paihang"-->
+                    <!--                                android:layout_width="0dp"-->
+                    <!--                                android:layout_height="40dp"-->
+                    <!--                                android:layout_weight="1"-->
+                    <!--                                android:background="#20d7fd"-->
+                    <!--                                android:gravity="center"-->
+                    <!--                                android:orientation="horizontal">-->
+
+                    <!--                                <ImageView-->
+                    <!--                                    android:layout_width="90px"-->
+                    <!--                                    android:layout_height="90px"-->
+                    <!--                                    android:background="@mipmap/home_icon_paihang" />-->
+
+                    <!--                                <TextView-->
+                    <!--                                    android:layout_width="wrap_content"-->
+                    <!--                                    android:layout_height="match_parent"-->
+                    <!--                                    android:layout_marginLeft="5dp"-->
+                    <!--                                    android:gravity="center"-->
+                    <!--                                    android:text="排行榜"-->
+                    <!--                                    android:textColor="@color/white" />-->
+                    <!--                            </LinearLayout>-->
+
+                    <!--                            <LinearLayout-->
+                    <!--                                android:id="@+id/btn_home_yaoqing"-->
+                    <!--                                android:layout_width="0dp"-->
+                    <!--                                android:layout_height="40dp"-->
+                    <!--                                android:layout_marginLeft="15dp"-->
+                    <!--                                android:layout_weight="1"-->
+                    <!--                                android:background="#ffd94d"-->
+                    <!--                                android:gravity="center"-->
+                    <!--                                android:orientation="horizontal">-->
+
+                    <!--                                <ImageView-->
+                    <!--                                    android:layout_width="90px"-->
+                    <!--                                    android:layout_height="90px"-->
+                    <!--                                    android:background="@mipmap/home_icon_yaoqing" />-->
+
+                    <!--                                <TextView-->
+                    <!--                                    android:layout_width="wrap_content"-->
+                    <!--                                    android:layout_height="match_parent"-->
+                    <!--                                    android:layout_marginLeft="5dp"-->
+                    <!--                                    android:gravity="center"-->
+                    <!--                                    android:text="邀请好友"-->
+                    <!--                                    android:textColor="@color/white" />-->
+                    <!--                            </LinearLayout>-->
+                    <!--                        </LinearLayout>-->
+
+                    <!--精品游戏-->
+                    <FrameLayout
+                        android:id="@+id/boutique_game"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:paddingBottom="5dp" />
+                </LinearLayout>
+
+
+                <!--6模快-->
+                <GridView
+                    android:id="@+id/gridView_game_menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:columnWidth="60dp"
+                    android:gravity="center"
+                    android:listSelector="#00000000"
+                    android:numColumns="6"
+                    android:stretchMode="spacingWidthUniform" />
+            </android.support.design.widget.AppBarLayout>
+
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/home_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </android.support.design.widget.CoordinatorLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

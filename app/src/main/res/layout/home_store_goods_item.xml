@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/bai">
+
+    <android.widget.LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_home_store_goods_pic"
+            android:layout_width="565px"
+            android:layout_height="325px"
+              android:scaleType="fitXY"
+            android:background="@drawable/goods_default" />
+
+        <TextView
+            android:id="@+id/tv_home_store_goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32px"
+            android:layout_marginLeft="40px"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="怪兽必须死黄金礼包"
+            android:textColor="@color/font_black_1"
+            android:textSize="48px" />
+
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="32px">
+
+            <android.widget.LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="40px"
+                android:layout_marginBottom="40px">
+
+                <ImageView
+                    android:layout_width="44px"
+                    android:layout_height="44px"
+                    android:layout_gravity="center_vertical"
+                      android:src="@drawable/mall_integral" />
+
+                <TextView
+                    android:id="@+id/tv_home_store_goods_cost_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="12px"
+                    android:text="20000"
+                    android:textSize="40px" />
+            </android.widget.LinearLayout>
+
+            <android.widget.RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_toLeftOf="@+id/tv_home_store_goods_item_number"
+                    android:text="剩余:"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:id="@+id/tv_home_store_goods_item_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="1234567"
+                    android:textColor="@color/green"
+                    android:textSize="40px" />
+            </android.widget.RelativeLayout>
+
+        </android.widget.LinearLayout>
+    </android.widget.LinearLayout>
+</android.widget.LinearLayout>

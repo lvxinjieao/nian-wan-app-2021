@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/bai"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_pay"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/img_personal_center_pay"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/my_pay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_personal_center_pay"
+                android:text="充值"
+                android:textColor="@color/zi_hei"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_center_money"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.01">
+
+        <View
+            android:layout_width="2px"
+            android:layout_height="160px"
+            android:layout_centerInParent="true"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_balance"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/img__personal_center_balance"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/my_balance" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img__personal_center_balance"
+                android:text="余额"
+                android:textColor="@color/zi_hei"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

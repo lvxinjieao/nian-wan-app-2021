@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:background="@color/zhuse_lan">
+
+
+    <android.widget.RelativeLayout
+        android:id="@+id/sreach_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@id/shoucang"
+        android:layout_toRightOf="@id/aa">
+
+        <android.widget.LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/img_home_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="60px"
+                android:layout_toLeftOf="@+id/btn_home_login"
+                android:background="@drawable/nav_btn_search" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/btn_home_follow"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:background="@drawable/home_login_white_shape"-->
+            <!--android:gravity="center"-->
+            <!--android:text="关注"-->
+            <!--android:textColor="@color/font_white"-->
+            <!--android:textSize="15sp" />-->
+        </android.widget.LinearLayout>
+
+
+        <!--<android.widget.RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="20px">-->
+
+        <!--<com.nian.wan.app.view.ShapeImageView-->
+        <!--android:id="@+id/img_person_icon"-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@drawable/my_head_not"-->
+        <!--app:radiusType="circle" />-->
+
+        <!--<android.widget.LinearLayout-->
+        <!--android:id="@+id/ll_no_login"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:layout_toRightOf="@id/img_person_icon"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/btn_home_login"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:text="登录"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="16sp" />-->
+
+        <!--<ImageView-->
+        <!--android:layout_marginLeft="3dp"-->
+        <!--android:layout_marginRight="3dp"-->
+        <!--android:layout_width="1dp"-->
+        <!--android:layout_height="15dp"-->
+        <!--android:background="@color/white" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/btn_home_register"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:text="注册"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="16sp" />-->
+        <!--</android.widget.LinearLayout>-->
+
+        <!--<android.widget.LinearLayout-->
+        <!--android:id="@+id/ll_is_login"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="20px"-->
+        <!--android:layout_toRightOf="@id/img_person_icon"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:visibility="gone">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_home_account"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingRight="30px"-->
+        <!--android:text="加载中..."-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="16sp" />-->
+
+        <!--</android.widget.LinearLayout>-->
+
+        <!--</android.widget.RelativeLayout>-->
+
+
+    </android.widget.RelativeLayout>
+</android.widget.RelativeLayout>

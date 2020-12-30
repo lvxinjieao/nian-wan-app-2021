@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/down_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="40dp">
+
+        <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+            android:id="@+id/down_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            app:rcBackgroundColor="@color/gray"
+            app:rcMax="100"
+            app:rcProgress="40"
+            app:rcProgressColor="@color/zhuse_lan"
+            app:rcRadius="20px" />
+
+        <TextView
+            android:id="@+id/down_spend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/down_progressbar"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:text="0kb/S"
+            android:textColor="@color/gray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/down_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/down_progressbar"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:text="0M/0下载"
+            android:textColor="@color/gray"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.widget.LinearLayout
+        android:id="@+id/ll_game_detail_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/zhuse_lan"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/tou"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <android.widget.RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="160px">
+
+            <android.widget.RelativeLayout
+                android:id="@+id/back"
+                android:layout_width="160px"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/left_white" />
+            </android.widget.RelativeLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="300px"
+                android:layout_marginRight="100px"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="加载中加加载中"
+                android:textColor="@color/bai"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="90px"
+                android:layout_height="90px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40px"
+                android:background="@mipmap/welfare_nav_btn_share_nor"
+                android:visibility="gone" />
+
+        </android.widget.RelativeLayout>
+    </android.widget.LinearLayout>
+
+    <android.widget.RelativeLayout
+        android:id="@+id/ll_down_main"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/zhuse_lan"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_fanli"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="充值返利0%"
+            android:textColor="@color/bai"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/btn_toPlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="开始游戏"
+            android:textColor="@color/bai"
+            android:textSize="16sp" />
+    </android.widget.RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_down_main"
+        android:layout_below="@id/ll_game_detail_head"
+        android:divider="@null"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_gamedet_hread_h5" />
+
+            <include layout="@layout/layout_gamedet_zhong" />
+
+            <include layout="@layout/layout_gamedet_dibu" />
+        </android.widget.LinearLayout>
+    </ScrollView>
+
+
+</android.widget.RelativeLayout>

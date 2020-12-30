@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.widget.RelativeLayout
+        android:id="@+id/rl_home_store_score_content"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:background="@color/bai">
+
+        <com.nian.wan.app.view.ShapeImageView
+            android:id="@+id/img_icon"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40px"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_picture"
+            app:borderRadius="20px"
+            app:radiusType="round" />
+
+        <TextView
+            android:id="@+id/tv_point"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60px"
+            android:gravity="center"
+            android:text="-100"
+            android:textColor="@color/theme_red"
+            android:textSize="20sp" />
+
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:layout_toLeftOf="@id/tv_point"
+            android:layout_toRightOf="@id/img_icon"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="加载中..."
+                android:textColor="@color/zi_hei"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="2017-01-01  12:12:12"
+                android:textSize="14sp" />
+        </android.widget.LinearLayout>
+    </android.widget.RelativeLayout>
+
+    <android.widget.LinearLayout
+        android:id="@+id/ll_home_store_cost_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_home_store_score_content"
+        android:background="@color/e7_line"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_home_store_cost_description"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="20px"
+            android:layout_marginRight="20px"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="还我河山,18351812118vghu,江苏省常州市天宁区-好的八点半-哪个区-那个街道-哪个房子的哪个小区-地下车库XXXXXXXXXXXXXXXXXXXXXXXXX"
+            android:textSize="40px" />
+
+    </android.widget.LinearLayout>
+
+</android.widget.RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/yuan_jiao_login_bg"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp">
+
+        <RelativeLayout
+            android:id="@+id/img_visitor_login_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10px">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/close" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_visitor_login_success_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="游客登录成功"
+            android:textColor="@color/font_black_1"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_visitor_login_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_visitor_login_success_title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账户："
+                    android:textColor="@color/font_gray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_visitor_login_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="yk_o4Ssfl"
+                    android:textColor="@color/font_black_1"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="密码："
+                    android:textColor="@color/font_gray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_visitor_login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="fd128ue89q3f"
+                    android:textColor="@color/font_black_1"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_phone_bind_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_visitor_login_account"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="50px"
+            android:layout_marginRight="15dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="（为了防止您下次登录时忘记账户密码,无法通过手机号找回密码,建议您绑定手机号,还可获得**积分哦）"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_visitor_login_go_bind"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/tv_phone_bind_success"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/yuan_jiao_green_bg"
+            android:gravity="center"
+            android:text="去绑定"
+            android:textColor="@color/bai"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</RelativeLayout>

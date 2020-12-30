@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/bigbg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_take_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:background="@drawable/login_beijing"
+            android:text="拍照"
+            android:textColor="@drawable/login1_wenzi"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_pick_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1"
+            android:background="@drawable/login_beijing"
+            android:text="从相册选择"
+            android:textColor="@drawable/login1_wenzi"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="15dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginBottom="15dip"
+            android:layout_weight="0.6"
+            android:background="@drawable/zhi_jiao_gray"
+            android:text="取消"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

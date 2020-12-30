@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai">
+
+
+    <android.widget.LinearLayout
+        android:id="@+id/ll_open_server_tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/game_activities_shape"
+        android:orientation="horizontal">
+
+        <android.widget.RelativeLayout
+            android:id="@+id/rl_already_open_server"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/game_activities_shape_item_one_check">
+
+            <android.widget.LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/img_already_open_server"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/tv_already_open_server"
+                    android:src="@drawable/service_opened_unselect" />
+
+                <TextView
+                    android:id="@+id/tv_already_open_server"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="已开新服"
+                    android:textColor="@color/font_white"
+                    android:textSize="16sp" />
+            </android.widget.LinearLayout>
+
+        </android.widget.RelativeLayout>
+
+        <android.widget.RelativeLayout
+            android:id="@+id/rl_server_foreshow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/game_activities_shape_item_two_uncheck">
+
+            <android.widget.LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/img_server_foreshow"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/tv_server_foreshow"
+                    android:src="@drawable/service_trailer_select" />
+
+                <TextView
+                    android:id="@+id/tv_server_foreshow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="新服预告"
+                    android:textColor="#99CC33"
+                    android:textSize="16sp" />
+            </android.widget.LinearLayout>
+
+        </android.widget.RelativeLayout>
+    </android.widget.LinearLayout>
+
+    <com.nian.wan.app.view.CollectionViewPager
+        android:id="@+id/vp_open_server_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_open_server_tab"
+        android:layout_marginTop="5dp" />
+
+</android.widget.RelativeLayout>

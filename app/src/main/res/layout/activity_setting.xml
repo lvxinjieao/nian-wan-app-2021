@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_shen"
+    >
+
+    <include layout="@layout/other_head"/>
+
+    <RelativeLayout
+        android:id="@+id/modifypassword"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/bai"
+        >
+
+        <ImageView
+            android:id="@+id/aa"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@mipmap/my_img_password"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="修改密码"
+            android:textSize="16dp"
+            android:textColor="@color/zi_hei"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/aa"
+            />
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            android:background="@mipmap/home_btn_all"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_shen"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        />
+    <RelativeLayout
+        android:id="@+id/bindphone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/bai"
+        android:layout_marginBottom="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/vv"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@mipmap/my_img_phone"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="绑定手机"
+            android:textSize="16dp"
+            android:textColor="@color/zi_hei"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/vv"
+            />
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            android:background="@mipmap/home_btn_all"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="退出登录"
+        android:textColor="@color/zi_hei"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:id="@+id/tuichu"
+        android:background="@color/bai"
+        />
+</LinearLayout>

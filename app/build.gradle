@@ -1,0 +1,94 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\lvxin\\AndroidStudioProjects\\nian-wan-app-2021\\nianwan.jks')
+            storePassword '123456'
+            keyAlias 'nianwan'
+            keyPassword '123456'
+        }
+    }
+    compileSdkVersion 28
+    buildToolsVersion '29.0.2'
+
+    defaultConfig {
+        applicationId "com.nian.wan.app"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 2
+        versionName '2.0'
+        multiDexEnabled true
+        signingConfig signingConfigs.release
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation(name: 'mc', ext: 'aar')
+    implementation files('libs/tbs_sdk_thirdapp_v4.3.0.jar')
+
+    implementation 'com.android.support:design:28+'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'org.jetbrains:annotations:15.0'
+
+    implementation 'com.github.xiaohaibin:XBanner:1.6.1'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    implementation 'jp.wasabeef:glide-transformations:4.0.1'
+
+    implementation 'com.android.support:multidex:1.0.3'
+
+    implementation 'com.blankj:utilcode:1.3.7'
+
+    implementation 'de.greenrobot:eventbus:3.0.0-beta1'
+
+    //侧滑删除
+    implementation 'com.github.mcxtzhang:all-base-adapter:V1.8.0'
+    implementation 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.5'
+    //省市区三级联动
+    implementation 'liji.library.dev:citypickerview:2.0.1'
+    //首页Banner
+    implementation 'com.squareup.picasso:picasso:2.3.2'
+
+
+    implementation 'com.sunfusheng:marqueeview:1.3.2'
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+
+    //徽章
+    implementation 'cn.bingoogolapple:bga-badgeview:1.1.3@aar'
+    implementation 'com.allenliu.badgeview:library:1.1.1'
+    implementation 'com.github.czy1121:badgebutton:1.1.0'
+    implementation 'com.github.dfqin:grantor:2.1.0'
+    implementation 'com.liaoinstan.springview:library:1.3.0'
+    //轻量级储存
+    implementation 'com.orhanobut:hawk:2.0.1'
+    implementation 'com.google.android:flexbox:0.3.0'
+
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-1'
+    //进度条
+    implementation 'com.akexorcist:RoundCornerProgressBar:2.0.3'
+
+    implementation 'com.arialyy.aria:aria-core:3.6.5'
+    annotationProcessor 'com.arialyy.aria:aria-compiler:3.6.5'
+
+    implementation 'com.journeyapps:zxing-android-embedded:3.5.0'
+}

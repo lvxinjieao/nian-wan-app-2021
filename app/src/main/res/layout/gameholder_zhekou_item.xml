@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.widget.RelativeLayout
+        android:id="@+id/rl_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="260px"
+        android:layout_marginRight="40px">
+        <TextView
+            android:id="@+id/tv_start"
+            android:layout_width="180px"
+            android:layout_height="98px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bian_kuang_green"
+            android:gravity="center"
+            android:text="下载"
+            android:textColor="@color/zhuse_lan"
+            android:textSize="14sp" />
+
+        <android.widget.RelativeLayout
+            android:id="@+id/rl_home_hot_data_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20px"
+            android:layout_toLeftOf="@+id/tv_start">
+
+            <android.widget.RelativeLayout
+                android:id="@+id/layout_icon"
+                android:layout_width="210px"
+                android:layout_height="200px"
+                android:layout_marginLeft="40px"
+                android:layout_centerVertical="true">
+
+                <com.nian.wan.app.view.ShapeImageView
+                    android:id="@+id/img_home_hot_pic"
+                    android:layout_width="200px"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/default_picture"
+                    app:borderRadius="20px"
+                    app:radiusType="round" />
+                <ImageView
+                    android:id="@+id/img_tag"
+                    android:layout_width="110px"
+                    android:layout_height="50px"
+                    android:background="@mipmap/tag_h5"
+                    android:layout_alignParentRight="true"/>
+            </android.widget.RelativeLayout>
+
+            <android.widget.LinearLayout
+                android:id="@+id/ll_my_gift_hot_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:layout_toRightOf="@+id/layout_icon"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_home_hot_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10px"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="加载中..."
+                    android:textColor="@color/zi_hei"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_home_hot_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="100M"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+
+                <android.widget.LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_zhekou_shouchong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5px"
+                        android:paddingBottom="5px"
+                        android:paddingLeft="10px"
+                        android:paddingRight="10px"
+                        android:layout_marginRight="20px"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/zhi_jiao_yellow"
+                        android:gravity="center"
+                        android:text="首冲1.0折"
+                        android:textColor="@color/font_orange"
+                        android:textSize="10sp" />
+                    <TextView
+                        android:id="@+id/tv_zhekou_xuchong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5px"
+                        android:paddingBottom="5px"
+                        android:paddingLeft="10px"
+                        android:paddingRight="10px"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/zhi_jiao_yellow"
+                        android:gravity="center"
+                        android:text="首冲1.0折"
+                        android:layout_marginRight="20px"
+                        android:textColor="@color/font_orange"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/tv_zhekou_bangbi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5px"
+                        android:paddingBottom="5px"
+                        android:paddingLeft="10px"
+                        android:paddingRight="10px"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/zhi_jiao_yellow"
+                        android:gravity="center"
+                        android:text="绑币1.0折"
+                        android:textColor="@color/font_orange"
+                        android:textSize="10sp" />
+                </android.widget.LinearLayout>
+
+
+                <include layout="@layout/layout_download"
+                    android:visibility="gone"/>
+
+            </android.widget.LinearLayout>
+        </android.widget.RelativeLayout>
+
+    </android.widget.RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="@color/e7_line" />
+
+</android.widget.LinearLayout>

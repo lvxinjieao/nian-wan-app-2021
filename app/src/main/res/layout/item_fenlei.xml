@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.widget.RelativeLayout
+        android:id="@+id/rl_game_subject_cotent"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <com.nian.wan.app.view.ShapeImageView
+            android:id="@+id/icon"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_picture"
+            app:borderRadius="20px"
+            app:radiusType="round" />
+
+        <android.widget.LinearLayout
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/shuliang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20px"
+                android:text="0"
+                android:textColor="@color/font_black_2"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="30px"
+                android:layout_height="54px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="39px"
+                android:background="@drawable/game_classify_unselect" />
+        </android.widget.LinearLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/all"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/font_black_2"
+            android:text="类型"
+            android:textSize="15sp" />
+    </android.widget.RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/rl_game_subject_cotent"
+        android:background="@color/e7_line" />
+</android.widget.RelativeLayout>

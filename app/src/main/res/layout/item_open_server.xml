@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bai"
+    android:orientation="vertical">
+
+    <android.widget.RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280px"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px">
+
+        <android.widget.RelativeLayout
+            android:id="@+id/rl_open_server_data_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/tv_open_server_start">
+
+
+            <com.nian.wan.app.view.ShapeImageView
+                android:id="@+id/img_open_server_pic"
+                android:layout_width="192px"
+                android:layout_height="192px"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/default_picture"
+                app:borderRadius="20px"
+                app:radiusType="round" />
+
+            <android.widget.LinearLayout
+                android:id="@+id/ll_my_gift_hot_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:layout_toLeftOf="@+id/tv_open_server_start"
+                android:layout_toRightOf="@+id/img_open_server_pic"
+                android:orientation="vertical">
+
+                <android.widget.LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_open_server_game_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="少女咖啡枪"
+                        android:textColor="@color/zi_hei"
+                        android:textSize="52px"
+                        android:layout_marginBottom="20px"/>
+                </android.widget.LinearLayout>
+
+
+                <android.widget.LinearLayout
+                    android:id="@+id/ll_msg_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="44px"
+                        android:layout_height="44px"
+                        android:layout_marginRight="12px"
+                          android:src="@drawable/service_trailer_area" />
+                    <TextView
+                        android:id="@+id/tv_open_server_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="角色"
+                        android:singleLine="true"
+                        android:textColor="@color/green"
+                        android:textSize="40px" />
+                    <ImageView
+                        android:id="@+id/img_home_hot_desc_line"
+                        android:layout_width="4px"
+                        android:layout_height="34px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="34px"
+                        android:layout_marginRight="30px"
+                        android:layout_toRightOf="@id/tv_home_hot_type"
+                        android:background="#e7e7e7" />
+                    <ImageView
+                        android:layout_width="44px"
+                        android:layout_height="44px"
+                        android:layout_marginRight="12px"
+                          android:src="@drawable/service_trailer_time" />
+                    <TextView
+                        android:id="@+id/tv_open_server_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/img_home_hot_desc_line"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:layout_marginRight="40px"
+                        android:text="相亲相爱,不如来互相伤害!相亲相爱,不如来互相伤害!相亲相爱,不如来互相伤害!"
+                        android:textColor="@color/gray"
+                        android:textSize="40px" />
+                </android.widget.LinearLayout>
+
+
+                <include layout="@layout/layout_download"
+                    android:visibility="gone"/>
+
+
+                <TextView
+                    android:id="@+id/con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="礼包内容：xxxxxx"
+                    android:textColor="@color/zi_hui1"
+                    android:textSize="14dp"
+                    android:visibility="gone" />
+            </android.widget.LinearLayout>
+        </android.widget.RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_open_server_start"
+            android:layout_width="170px"
+            android:layout_height="98px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bian_kuang_green"
+            android:gravity="center"
+            android:text="开始"
+            android:textColor="@color/zhuse_lan"
+            android:textSize="44px" />
+
+    </android.widget.RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40px"
+        android:layout_marginRight="40px"
+        android:background="@color/e7_line"
+        android:visibility="visible" />
+</android.widget.LinearLayout>

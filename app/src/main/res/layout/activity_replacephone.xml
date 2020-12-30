@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/unbind_phone_head" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="135dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/my_bind_already" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="您绑定的手机号："
+        android:textColor="@color/zi_hei"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="绑定手机后，您可以通过手机号找回密码"
+        android:textColor="@color/zi_hui2"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="同时提高账户安全性"
+        android:textColor="@color/zi_hui2"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="如需更换手机号请先解绑手机"
+        android:textColor="@color/zi_hui2"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_already_bind_phone_replace"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_normal_gray_shape"
+        android:gravity="center"
+        android:text="解绑手机号"
+        android:textColor="#333333"
+        android:textSize="20sp" />
+</android.widget.LinearLayout>

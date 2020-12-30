@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bai"
+    android:orientation="vertical">
+
+    <android.widget.RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+
+        <TextView
+            android:id="@+id/tv_home_game_activities_start"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bian_kuang_green"
+            android:gravity="center"
+            android:text="查看"
+            android:textColor="@color/zhuse_lan"
+            android:textSize="14sp" />
+
+        <android.widget.LinearLayout
+            android:id="@+id/ll_my_gift_hot_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_home_game_activities_start"
+            android:orientation="vertical">
+
+            <android.widget.LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_home_game_activitie_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="少女咖啡"
+                    android:textColor="@color/zi_hei"
+                    android:textSize="16sp" />
+
+            </android.widget.LinearLayout>
+
+
+            <android.widget.LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_home_game_activities_publish"
+                    android:layout_width="35dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/home_game_activities_publish_shape"
+                    android:gravity="center"
+                    android:text="公告"
+                    android:textColor="@color/green"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_home_game_activities_activities"
+                    android:layout_width="96px"
+                    android:layout_height="52px"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/zhi_jiao_yellow"
+                    android:gravity="center"
+                    android:text="活动"
+                    android:textColor="@color/font_orange"
+                    android:textSize="32px"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/tv_home_game_activities_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20px"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="相亲相爱,不如来互相伤害!"
+                    android:textColor="@color/gray"
+                    android:textSize="40px" />
+
+            </android.widget.LinearLayout>
+
+
+            <TextView
+                android:id="@+id/con"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="礼包内容：xxxxxx"
+                android:textColor="@color/zi_hui1"
+                android:textSize="14dp"
+                android:visibility="gone" />
+        </android.widget.LinearLayout>
+    </android.widget.RelativeLayout>
+
+</android.widget.LinearLayout>

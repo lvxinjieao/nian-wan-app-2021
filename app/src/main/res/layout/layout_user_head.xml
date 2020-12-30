@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/green">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_kefu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@+id/img_personal_center_message"
+            android:background="@drawable/mall_rule_service" />
+
+        <ezy.ui.view.BadgeButton
+            android:id="@+id/img_personal_center_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/my_news"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/img_personal_center_login_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/my_quit"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <!--已登录 头像和注册按钮 开始-->
+    <LinearLayout
+        android:id="@+id/personal_center_already_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <com.nian.wan.app.view.ShapeImageView
+            android:id="@+id/personal_center_already_user_icon"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_icon_yes"
+            app:radiusType="circle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昵称: "
+                    android:textColor="@color/font_white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/personal_center_already_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UID: "
+                    android:textColor="@color/font_white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/personal_center_uid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="85dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true">
+
+                <RelativeLayout
+                    android:id="@+id/rl_group"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:id="@+id/personal_already_sign"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/personal_center_sign_shape"
+                        android:gravity="center"
+                        android:text="签到"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_hint_point"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/personal_already_sign"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_red_hint"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/hongdian" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <!--已登录 头像和注册按钮 结束-->
+
+
+    <!--未登录 头像和注册按钮 开始-->
+    <LinearLayout
+        android:id="@+id/personal_center_unlogin_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <com.nian.wan.app.view.ShapeImageView
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/user_icon_no"
+            app:radiusType="circle" />
+
+        <TextView
+            android:id="@+id/personal_center_login"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/personal_center_register"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <!--未登录 头像和注册按钮 结束-->
+
+
+</RelativeLayout>

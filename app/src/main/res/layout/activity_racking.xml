@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+
+    <ImageView
+        android:id="@+id/tou"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/zhuse_lan" />
+
+
+
+    <android.widget.RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/zhuse_lan">
+
+        <android.widget.LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/left_white" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5px"
+                android:text="首页"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </android.widget.LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="游戏列表"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!--<android.widget.LinearLayout-->
+            <!--android:layout_width="700px"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:orientation="horizontal">-->
+            <!---->
+            <!--<android.widget.LinearLayout-->
+                <!--android:id="@+id/btn_shouyou"-->
+                <!--android:layout_width="0px"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="vertical">-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="20px"-->
+                    <!--android:layout_marginTop="20px"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="手游"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="16sp" />-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/img_shouyou"-->
+                    <!--android:layout_width="150px"-->
+                    <!--android:layout_height="5px"-->
+                    <!--android:background="@color/white" />-->
+            <!--</android.widget.LinearLayout>-->
+
+            <!--<android.widget.LinearLayout-->
+                <!--android:id="@+id/btn_h5"-->
+                <!--android:layout_width="0px"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="vertical">-->
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="20px"-->
+                    <!--android:layout_marginTop="20px"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="H5游戏"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="16sp" />-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/img_h5"-->
+                    <!--android:layout_width="150px"-->
+                    <!--android:layout_height="5px"-->
+                    <!--android:background="@color/white"-->
+                      <!--android:visibility="invisible" />-->
+            <!--</android.widget.LinearLayout>-->
+        <!--</android.widget.LinearLayout>-->
+
+        <ImageView
+            android:id="@+id/btn_search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+              android:src="@drawable/nav_btn_search" />
+    </android.widget.RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</android.widget.LinearLayout>

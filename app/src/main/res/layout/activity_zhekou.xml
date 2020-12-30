@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/tou"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/zhuse_lan" />
+
+    <android.widget.RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:background="@color/zhuse_lan">
+
+        <android.widget.LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/left_white" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="首页"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginLeft="5px"/>
+        </android.widget.LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="精品专区"
+            android:layout_centerInParent="true"
+            android:textSize="18sp"
+            android:textColor="@color/white"/>
+
+        <android.widget.RelativeLayout
+            android:id="@+id/btn_search"
+            android:layout_width="160px"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:background="@drawable/nav_btn_search"/>
+        </android.widget.RelativeLayout>
+    </android.widget.RelativeLayout>
+
+    <android.widget.LinearLayout
+        android:id="@+id/ll_none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="300px"
+            android:layout_height="300px"
+            android:background="@mipmap/zhekou_icon_nozhekou"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="暂无精品游戏，去逛逛别的地方吧~"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/gray"
+            android:layout_marginTop="40px"/>
+    </android.widget.LinearLayout>
+
+
+    <com.mc.developmentkit.views.SpringView
+        android:visibility="gone"
+        android:id="@+id/springView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:overScrollMode="never">
+        </ListView>
+    </com.mc.developmentkit.views.SpringView>
+
+
+</android.widget.LinearLayout>

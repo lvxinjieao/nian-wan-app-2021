@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:orientation="vertical"
+        android:background="@color/bai"
+        >
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="196px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="40px"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="18012007909"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/dialog_title"
+                android:id="@+id/account" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="2017-03-05"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@color/dialog_title"
+                android:id="@+id/time" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="0.00"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/zhuse_lan"
+                android:id="@+id/qian" />
+        </android.widget.LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="4px"
+            android:background="@mipmap/xuxian"
+            />
+    </android.widget.LinearLayout>
+</android.widget.LinearLayout>

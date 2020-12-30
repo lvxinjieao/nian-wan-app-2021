@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/tou"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/zhuse_lan"
+        />
+
+    <include layout="@layout/other_head" />
+
+    <com.mc.developmentkit.views.SpringView
+        android:id="@+id/springview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:background="@color/bai"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:overScrollMode="never">
+        </android.support.v7.widget.RecyclerView>
+    </com.mc.developmentkit.views.SpringView>
+</LinearLayout>

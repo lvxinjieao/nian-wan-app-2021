@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+
+    <com.nian.wan.app.view.ShapeImageView
+        android:id="@+id/img_icon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_picture"
+        app:borderRadius="10dp"
+        app:radiusType="round" />
+
+
+    <android.widget.LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <android.widget.RelativeLayout
+            android:id="@+id/rl_game_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_game_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="加载中..."
+                android:textColor="@color/zi_hei"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tv_package"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_game_name"
+                android:background="@drawable/zhi_jiao_yellow"
+                android:gravity="center"
+                android:text="礼包"
+                android:textColor="@color/font_orange"
+                android:textSize="10sp" />
+        </android.widget.RelativeLayout>
+
+
+        <include
+            layout="@layout/layout_download"
+            android:visibility="gone" />
+
+
+        <android.widget.LinearLayout
+            android:id="@+id/ll_hint_Msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.widget.LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="0M"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/img_line"
+                    android:layout_width="1dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#e7e7e7" />
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img_line"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textColor="@color/zhuse_lan"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="下载"
+                    android:textColor="@color/gray"
+                    android:textSize="13sp" />
+            </android.widget.LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/img_line"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="相亲相爱,不如来互相伤害!相亲相爱!"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </android.widget.LinearLayout>
+
+    </android.widget.LinearLayout>
+
+    <LinearLayout
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_fanli"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="返利0%"
+            android:textColor="#FF7702"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/btn_start"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bian_kuang_green"
+            android:gravity="center"
+            android:text="开始"
+            android:textColor="@color/zhuse_lan" />
+    </LinearLayout>
+
+
+</android.widget.LinearLayout>

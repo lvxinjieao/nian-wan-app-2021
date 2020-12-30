@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/tou"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/transparent" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/zhuse_lan">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="平台币充值"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="800px"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/btn_ptb"-->
+        <!--android:layout_width="0px"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20px"-->
+        <!--android:layout_marginBottom="20px"-->
+        <!--android:gravity="center"-->
+        <!--android:text="平台币充值"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="16sp" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_ptb"-->
+        <!--android:layout_width="200px"-->
+        <!--android:layout_height="5px"-->
+        <!--android:background="@color/white" />-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/btn_zhekou"-->
+        <!--android:layout_width="0px"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20px"-->
+        <!--android:layout_marginBottom="20px"-->
+        <!--android:gravity="center"-->
+        <!--android:text="折扣充值"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="16sp" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/img_zhekou"-->
+        <!--android:layout_width="200px"-->
+        <!--android:layout_height="5px"-->
+        <!--android:background="@color/white"-->
+        <!--android:visibility="invisible" />-->
+        <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/left_white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

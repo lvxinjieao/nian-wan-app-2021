@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_no_gift"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="125dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@mipmap/my_package_img_not" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="您暂时还没有任何礼包哦~"
+        android:textColor="@color/zi_hei"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/tv_lingqu"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/yuan_jiao_green_bg"
+        android:gravity="center"
+        android:text="去领取"
+        android:textColor="@color/bai"
+        android:textSize="17dp" />
+</LinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.widget.LinearLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@color/bai">
+        <android.widget.RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认兑换"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="50px"
+                android:textColor="@color/zi_hei"/>
+            <android.widget.RelativeLayout
+                android:id="@+id/btn_close"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:layout_alignParentRight="true">
+                <ImageView
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/close"/>
+            </android.widget.RelativeLayout>
+        </android.widget.RelativeLayout>
+
+        <android.widget.LinearLayout
+            android:id="@+id/layout_address"
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="兑换账号"
+                android:textSize="16sp"
+                android:textColor="@color/zi_hei"
+                android:gravity="center"/>
+            <android.widget.LinearLayout
+                android:layout_weight="2.7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:textSize="55px"
+                    android:text="18012007909"/>
+            </android.widget.LinearLayout>
+            <android.widget.RelativeLayout
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" >
+                <ImageView
+                    android:layout_width="30px"
+                    android:layout_height="50px"
+                    android:background="@mipmap/home_btn_all"
+                    android:layout_centerInParent="true"
+                      android:visibility="gone"/>
+            </android.widget.RelativeLayout>
+        </android.widget.LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_bg"/>
+
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/zi_hei"
+                android:textSize="16sp"
+                android:text="商品名称"/>
+            <TextView
+                android:id="@+id/tv_goods_name"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:paddingRight="40px"
+                android:textSize="17sp"
+                android:text="小米移动电源10000mAh"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@color/zi_hei" />
+        </android.widget.LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_bg"/>
+
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/zi_hei"
+                android:textSize="16sp"
+                android:text="兑换数量"/>
+            <TextView
+                android:id="@+id/tv_num"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:paddingRight="40px"
+                android:textSize="17sp"
+                android:text="×1"
+                android:textColor="@color/zi_hei" />
+        </android.widget.LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/gray_bg"/>
+
+        <android.widget.LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/zi_hei"
+                android:textSize="16sp"
+                android:text="所需积分"/>
+            <TextView
+                android:id="@+id/tv_need_point"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:paddingRight="40px"
+                android:textSize="17sp"
+                android:text="1000"
+                android:textColor="@color/zi_hei" />
+        </android.widget.LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:background="@color/bai"/>
+
+        <TextView
+            android:id="@+id/btn_duihuan"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/yuan_jiao_green_bg"
+            android:gravity="center"
+            android:text="立即兑换"
+            android:textColor="@color/bai"
+            android:textSize="16dp" />
+
+    </android.widget.LinearLayout>
+</android.widget.RelativeLayout>

@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "nian-wan-app-2021"

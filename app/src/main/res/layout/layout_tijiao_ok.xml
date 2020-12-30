@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai"
+    android:id="@+id/tijiao_ok">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@mipmap/my_opinion_img_success"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="30dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="意见反馈提交成功！"
+        android:textColor="@color/zi_hei"
+        android:textSize="22dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="感谢您对溪谷软件的信任与支持"
+        android:textColor="@color/zi_hui2"
+        android:textSize="16dp"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我们会在第一时间内解决这些问题"
+        android:textColor="@color/zi_hui2"
+        android:layout_marginTop="2dp"
+        android:textSize="16dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="35dp"
+        />
+    <TextView
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:background="@drawable/yuan_jiao_green_bg"
+        android:gravity="center"
+        android:text="返回个人中心"
+        android:textSize="16dp"
+        android:textColor="@color/bai"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/backzhong" />
+</LinearLayout>

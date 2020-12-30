@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/cb_my_footprint_item_is_check"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:button="@drawable/normal_blue_circle_check_box_style" />
+
+        <com.nian.wan.app.view.ShapeImageView
+            android:id="@+id/img_my_footprint_pic"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/default_picture"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="10dp"
+            app:borderRadius="20px"
+            app:radiusType="round" />
+
+        <TextView
+            android:id="@+id/tv_my_footprint_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="少女咖啡枪"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_my_footprint_details"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bian_kuang_green"
+            android:gravity="center"
+            android:text="查看"
+            android:textColor="@color/green"
+            android:textSize="14sp" />
+    </android.widget.LinearLayout>
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/e7_line"
+        android:visibility="gone"></View>
+
+</android.widget.LinearLayout>

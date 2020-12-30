@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bai"
+    android:orientation="vertical">
+
+    <include layout="@layout/modify_nickname_head" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="110px"
+        android:layout_marginLeft="100px"
+        android:layout_marginTop="80px"
+        android:layout_marginRight="100px"
+        android:background="@drawable/edit_bg">
+
+        <EditText
+            android:id="@+id/et_queren"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:inputType=""
+            android:maxLength="20"
+            android:textColor="@color/zi_hei"
+            android:textColorHint="@color/zi_hui2"
+            android:textSize="60px" />
+
+        <ImageView
+            android:id="@+id/img_modify_password_confirm_password"
+            android:layout_width="80px"
+            android:layout_height="52px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20px"
+            android:src="@drawable/delete" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

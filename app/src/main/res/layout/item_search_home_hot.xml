@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bai"
+    android:orientation="vertical">
+
+    <android.widget.RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="240px"
+        android:layout_marginRight="40px"
+        android:layout_marginTop="20px">
+
+        <android.widget.RelativeLayout
+            android:id="@+id/rl_home_hot_data_content"
+            android:layout_width="match_parent"
+            android:layout_height="240px"
+            android:layout_toLeftOf="@+id/tv_home_hot_start">
+
+            <com.nian.wan.app.view.ShapeImageView
+                android:id="@+id/img_home_hot_pic"
+                android:layout_width="184px"
+                android:layout_height="184px"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:src="@drawable/default_picture"
+                app:borderRadius="20px"
+                app:radiusType="round" />
+
+
+            <android.widget.LinearLayout
+                android:id="@+id/ll_my_gift_hot_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40px"
+                android:layout_toLeftOf="@+id/tv_home_hot_start"
+                android:layout_toRightOf="@+id/img_home_hot_pic"
+                android:orientation="vertical">
+
+                <android.widget.LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_home_hot_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="少女咖啡枪"
+                        android:textColor="@color/zi_hei"
+                        android:textSize="52px" />
+
+                    <TextView
+                        android:id="@+id/tv_home_hot_is_has_package"
+                        android:layout_width="96px"
+                        android:layout_height="52px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40px"
+                        android:background="@drawable/zhi_jiao_yellow"
+                        android:gravity="center"
+                        android:text="礼包"
+                        android:textColor="@color/font_orange"
+                        android:textSize="32px" />
+
+                </android.widget.LinearLayout>
+
+
+                <android.widget.LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_home_hot_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="角色"
+                        android:textColor="@color/green"
+                        android:textSize="40px" />
+
+                    <ImageView
+                        android:id="@+id/img_home_hot_desc_line"
+                        android:layout_width="4px"
+                        android:layout_height="34px"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="34px"
+                        android:layout_marginRight="30px"
+                        android:layout_toRightOf="@id/tv_home_hot_type"
+                        android:background="#e7e7e7" />
+
+
+                    <TextView
+                        android:id="@+id/tv_home_hot_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/img_home_hot_desc_line"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="相亲相爱,不如来互相伤害!相亲相爱,不如来互相伤害!"
+                        android:textColor="@color/gray"
+                        android:textSize="40px" />
+                </android.widget.LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="礼包内容：xxxxxx"
+                    android:textColor="@color/zi_hui1"
+                    android:textSize="14dp"
+                    android:visibility="gone" />
+            </android.widget.LinearLayout>
+        </android.widget.RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_home_hot_start"
+            android:layout_width="170px"
+            android:layout_height="98px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bian_kuang_green"
+            android:gravity="center"
+            android:text="开始"
+            android:textColor="@color/zhuse_lan"
+            android:textSize="44px" />
+    </android.widget.RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/xian_shen"
+        android:visibility="gone" />
+</android.widget.LinearLayout>
